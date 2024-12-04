@@ -16,6 +16,7 @@ export async function POST(req: Request) {
         pass: process.env.EMAIL_PASSWORD,
       },
     });
+    console.log("Variáveis de ambiente:", process.env);
 
     // Enviar e-mail
     await transporter.sendMail({
