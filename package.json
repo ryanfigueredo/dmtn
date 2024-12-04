@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@prisma/client": "^6.0.1",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.465.0",
     "motion": "^11.13.1",
     "next": "14.2.19",
+    "nodemailer": "^6.9.16",
     "radix-ui": "^1.0.1",
     "react": "^18",
     "react-dom": "^18",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.17.9",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
