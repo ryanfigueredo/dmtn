@@ -11,7 +11,7 @@ const SectionPartners = () => {
         {/* <Image src="mury.svg" height={40} width={80} alt="" />
         <Image src="pedracom.svg" height={40} width={80} alt="" /> */}
         <Image src="netshoes.svg" height={40} width={80} alt="" />
-        <Image src="tz.svg" height={40} width={60} alt="" />
+        {/* <Image src="tz.svg" height={40} width={60} alt="" /> */}
       </div>
 
       <div className="space-y-4 text-justify md:text-center">
