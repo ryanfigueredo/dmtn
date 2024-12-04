@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/app/_components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const SectionPartners = () => {
   return (
@@ -20,9 +21,13 @@ const SectionPartners = () => {
           setores. Junte-se a nós e transforme seu negócio em um case de
           sucesso.
         </h2>
-        <Button>
+        
+
+        <Link href="#form-section">
+          <Button>
           Marcar uma conversa <ArrowRight />
-        </Button>
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/app/_components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeaderSection = () => {
   useEffect(() => {
@@ -65,9 +66,11 @@ const HeaderSection = () => {
           e eficiente.
         </motion.p>
         <motion.div variants={itemVariants}>
+          <Link href="#form-section">
           <Button>
             Iniciar meu projeto <ArrowUpRight />
           </Button>
+          </Link>
         </motion.div>
       </motion.div>
 

@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 import { Button } from "@/app/_components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const FuncMetodology = () => {
   const controls = useAnimation();
@@ -86,9 +87,11 @@ const FuncMetodology = () => {
             </motion.h1>
           </div>
           <motion.div variants={itemVariants}>
-            <Button>
+            <Link href="#form-section">
+              <Button>
               Quero receber contato <ArrowRight />
-            </Button>
+              </Button>
+            </Link>
             <p className="mt-4 text-xs">
               Nossos especialistas estão prontos para atender você!
             </p>

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ServicesSection: React.FC = () => {
   // Variantes de animação
@@ -150,9 +151,11 @@ const ServicesSection: React.FC = () => {
             design e estratégia personalizada.
           </motion.p>
           <motion.div variants={buttonVariants}>
-            <Button>
+            <Link href="#form-section">
+              <Button>
               Marcar uma conversa <ArrowRight />
-            </Button>
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

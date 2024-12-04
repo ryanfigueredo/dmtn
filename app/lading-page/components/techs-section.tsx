@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/app/_components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechSection() {
   const technologies = [
@@ -52,9 +53,11 @@ export default function TechSection() {
         <p className="font-semibold text-[#353232] opacity-50">
           Projetos incríveis exigem ferramentas incríveis
         </p>
-        <Button>
-          Começar agora <ArrowUpRight />
-        </Button>
+        <Link href="#form-section">
+            <Button>
+              Começar agora <ArrowUpRight />
+              </Button>
+            </Link>
       </motion.div>
 
       <motion.div className="px-8 py-12" variants={containerVariants}>

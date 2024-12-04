@@ -20,7 +20,7 @@ const Header = () => {
         <Link href="#consultoria-gratuita">Consultoria Gratuita</Link>
         <Link href="#solucoes">Soluções</Link>
         <Link href="#metodologia">Metodologia</Link>
-        <Link href="#produtos">Produtos</Link>
+        <Link href="#form-section">Produtos</Link>
       </div>
 
       <div className="flex items-center gap-4">

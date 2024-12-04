@@ -113,6 +113,7 @@ export function ContactForm() {
       <div className="flex flex-col justify-center gap-8 md:w-full md:flex-row">
         {/* Formulário de contato */}
         <motion.div
+        id="form-section"
           ref={formRef}
           className="md:w-full md:max-w-lg"
           initial={{ opacity: 0, y: -20 }} // Inicia invisível e um pouco acima
