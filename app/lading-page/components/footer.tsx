@@ -57,10 +57,16 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link href="https://www.instagram.com/dmtndigital/" target="_blank" className="">
+                Instagram
+              </Link>
+            </li>
+            <li>
               <Link href="#trabalhe-conosco" className="">
                 Trabalhe conosco
               </Link>
             </li>
+           
           </ul>
         </div>
       </div>
