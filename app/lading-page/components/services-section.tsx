@@ -65,7 +65,7 @@ const ServicesSection: React.FC = () => {
         {/* Título e subtítulo */}
         <motion.div className="mb-12 text-center" variants={containerVariants}>
           <motion.h2
-            className="text-3xl font-bold text-[#353232] md:text-4xl"
+            className="text-2xl font-bold text-[#353232] md:text-4xl"
             variants={textVariants}
           >
             O melhor desenvolvimento para a sua ideia
@@ -81,7 +81,7 @@ const ServicesSection: React.FC = () => {
         </motion.div>
 
         {/* Cartões de serviços */}
-        <motion.div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <motion.div className="grid grid-cols-1 px-2 gap-8 md:grid-cols-2">
           {[
             {
               Icon: LayoutPanelLeft,
@@ -132,7 +132,7 @@ const ServicesSection: React.FC = () => {
                 <card.Icon className="relative z-10" />
               </div>
               <h3 className="mt-8 text-lg font-bold">{card.title}</h3>
-              <p className="mt-2 w-96 text-sm">{card.description}</p>
+              <p className="mt-2   text-sm">{card.description}</p>
             </motion.div>
           ))}
         </motion.div>

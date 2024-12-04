@@ -84,7 +84,7 @@ export default function MetodologiaSection() {
               height={200}
               className="mb-4"
             />
-            <div className="text-center">
+            <div className="">
               <h2 className="text-2xl font-bold">02 - Planejar</h2>
               <p className="mt-2">
                 Estruturamos soluções estratégicas com um design centrado no
