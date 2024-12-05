@@ -17,7 +17,7 @@ const LandingPage: React.FC = () => {
         <Header />
       </div>
       <HeaderSection />
-      <SectionPartners />
+      {/* <SectionPartners /> */}
       <ServicesSection />
       <FuncMetodologyTitle />
       <FuncMetodology />

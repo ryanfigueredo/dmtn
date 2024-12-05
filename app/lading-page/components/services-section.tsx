@@ -56,7 +56,7 @@ const ServicesSection: React.FC = () => {
   return (
     <motion.div
       id="solucoes"
-      className="relative py-20 md:mt-10"
+      className="relative py-20 md:mt-14"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }} // Apenas anima ao entrar na viewport

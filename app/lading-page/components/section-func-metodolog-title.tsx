@@ -35,7 +35,7 @@ const FuncMetodologyTitle = () => {
     <motion.div
       id="consultoria-gratuita"
       ref={ref}
-      className="flex flex-col items-center justify-center gap-4 pb-4 text-center md:pb-10"
+      className="flex flex-col items-center justify-center gap-4 pb-4 text-center md:mt-20 md:pb-10"
       variants={containerVariants}
       initial="hidden"
       animate={controls}

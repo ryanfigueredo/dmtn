@@ -13,7 +13,7 @@ const Footer = () => {
             src="/dmtnw.svg"
             alt="Logo"
           />
-          <h2 className="text-lg font-bold">Map</h2>
+          
           <ul className="mt-2 space-y-1">
             <li>
               <a href="#solucoes" className="hover:underline">
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <div className="space-y-6 text-start md:text-left">
-          <h2 className="mt-6 text-lg font-bold">Contato</h2>
+         
           <ul className="mt-2 space-y-1">
             <li>
               <Link
