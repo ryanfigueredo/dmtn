@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/header";
 import ServicesSection from "./components/services-section";
-import SectionPartners from "./components/section-partners";
 import HeaderSection from "./components/section-header";
 import MetodologiaSection from "./components/section-metodology";
 import TechSection from "./components/techs-section";
