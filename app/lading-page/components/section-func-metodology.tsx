@@ -54,7 +54,7 @@ const FuncMetodology = () => {
       >
         
         <motion.div
-          className="flex flex-col gap-8 rounded-lg bg-white p-4 text-start md:w-92 text-justify  md:max-w-2xl md:p-8"
+          className="flex flex-col gap-8 rounded-lg bg-white p-4 md:w-92 text-justify  md:max-w-2xl md:p-8"
           variants={itemVariants}
         >
           <div>
@@ -77,9 +77,7 @@ const FuncMetodology = () => {
             Nossos especialistas atuam como médicos para o seu negócio, prontos para ouvir suas necessidades, realizar uma análise detalhada e indicar os melhores caminhos para alcançar resultados incríveis.
   </div>
              
-             <div className="mt-2">
-             Lembre-se: para um diagnóstico preciso, precisamos entender seus desafios. Quanto mais informações você nos der, melhor será nossa "prescrição". Não existe ideia ruim, apenas ideias que ainda não foram bem desenvolvidas.
-             </div>
+            
             </motion.p>
           
           </div>
