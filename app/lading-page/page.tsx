@@ -6,7 +6,6 @@ import MetodologiaSection from "./components/section-metodology";
 import TechSection from "./components/techs-section";
 import Footer from "./components/footer";
 import FuncMetodology from "./components/section-func-metodology";
-import FuncMetodologyTitle from "./components/section-func-metodolog-title";
 import { ContactForm } from "./components/form-section";
 
 const LandingPage: React.FC = () => {
@@ -18,7 +17,7 @@ const LandingPage: React.FC = () => {
       <HeaderSection />
       {/* <SectionPartners /> */}
       <ServicesSection />
-      <FuncMetodologyTitle />
+      {/* <FuncMetodologyTitle /> */}
       <FuncMetodology />
       <MetodologiaSection />
       <TechSection />

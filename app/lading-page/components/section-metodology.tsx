@@ -27,8 +27,8 @@ export default function MetodologiaSection() {
       id="metodologia"
       className="flex flex-col items-center justify-center space-y-12 pt-24"
       initial="hidden"
-      whileInView="visible" // Ativa a animação ao entrar no viewport
-      viewport={{ once: true, amount: 0.2 }} // `once` garante que anima uma vez, `amount` ajusta a porcentagem visível
+      whileInView="visible" 
+      viewport={{ once: true, amount: 0.2 }} 
       variants={containerVariants}
     >
       {/* Título e descrição */}

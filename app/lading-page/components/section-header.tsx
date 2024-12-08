@@ -51,18 +51,18 @@ const HeaderSection = () => {
       {/* Texto e botão */}
       <motion.div className="space-y-6" variants={itemVariants}>
         <motion.h1
-          className="text-4xl font-bold text-[#353232] md:text-5xl"
+          className="text-4xl font-bold text-[#353232] md:max-w-72 md:text-5xl"
           variants={itemVariants}
         >
-          Sua Solução <br />
-          Digital <br />
+          Sua Solução 
+          Digital 
           Começa Aqui
         </motion.h1>
         <motion.p
           className="text-justify text-base text-[#353232] md:w-56 md:text-lg"
           variants={itemVariants}
         >
-          Consultoria gratuita para tirar sua ideia do papel com tecnologia ágil
+          Realize uma consultoria gratuita para tirar sua ideia do papel com tecnologia ágil
           e eficiente.
         </motion.p>
         <motion.div variants={itemVariants}>
