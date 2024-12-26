@@ -75,7 +75,7 @@ const HeaderSection = () => {
       </motion.div>
 
       {/* Imagem */}
-      <motion.div className="flex justify-center" variants={itemVariants}>
+      <motion.div className="flex justify-center mt-4" variants={itemVariants}>
         <Image
           src="hero.svg"
           alt="Ilustração de lâmpadas representando ideias"
