@@ -1,13 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  ArrowRight,
-  LayoutPanelLeft,
-  Rss,
-  SquareMousePointer,
-  TabletSmartphone,
-} from "lucide-react";
+import { Tractor, ShoppingCart, Globe, ChefHat, ArrowRight } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -69,7 +63,7 @@ const ServicesSection: React.FC = () => {
             className="text-2xl font-bold text-[#353232] md:text-4xl"
             variants={textVariants}
           >
-            O melhor desenvolvimento para a sua ideia
+            Soluções Personalizadas para Sua Necessidade
           </motion.h2>
           <motion.p
             className="mt-4 text-lg text-[#353232] opacity-70"
@@ -85,37 +79,37 @@ const ServicesSection: React.FC = () => {
         <motion.div className="grid grid-cols-1 px-2 gap-8 md:grid-cols-2">
           {[
             {
-              Icon: LayoutPanelLeft,
-              title: "Criação de Aplicativos",
+              Icon: ChefHat,
+              title: "Padarias",
               description:
-                "Aplicativos personalizados para iOS e Android, focados na experiência do usuário e alta performance.",
+                "Criação de um aplicativo ou sistema para gerenciar pedidos, controlar entregas de pães e manter um catálogo digital atualizado para seus clientes.",
               bgColor: "bg-[#5451A1]",
               textColor: "text-white",
               circleColor: "bg-[#434173]",
             },
             {
-              Icon: SquareMousePointer,
-              title: "Design UI/UX",
+              Icon: Tractor,
+              title: "Agricultura e Pecuária",
               description:
-                "Criação de interfaces de usuário e experiências intuitivas e envolventes.",
+                "Painel de controle para anotar demandas pecuárias, gerenciar estoque de insumos e acompanhar a produtividade da fazenda de forma eficiente.",
               bgColor: "bg-white",
               textColor: "text-[#353232]",
               circleColor: "bg-white",
             },
             {
-              Icon: Rss,
-              title: "Desenvolvimento de páginas web",
+              Icon: ShoppingCart,
+              title: "Comércio e Lojas",
               description:
-                "Modernas e responsivas, com foco na experiência do usuário e performance.",
+                "Sistemas de PDV para emissão de notas fiscais, controle de estoque em tempo real, e integração com plataformas de pagamento.",
               bgColor: "bg-white",
               textColor: "text-[#353232]",
               circleColor: "bg-white",
             },
             {
-              Icon: TabletSmartphone,
-              title: "Gestão de Mídias Sociais",
+              Icon: Globe,
+              title: "Negócios Digitais",
               description:
-                "Estratégias que geram engajamento e conectam sua marca ao público certo.",
+                "Desenvolvimento de plataformas e-commerce com integração para pagamento e envio automático de produtos.",
               bgColor: "bg-white",
               textColor: "text-[#353232]",
               circleColor: "bg-white",
