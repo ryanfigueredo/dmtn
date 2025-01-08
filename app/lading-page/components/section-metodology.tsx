@@ -34,7 +34,7 @@ export default function MetodologiaSection() {
       {/* Título e descrição */}
       <motion.div className="mb-12 text-center" variants={itemVariants}>
         <h1 className="text-3xl font-bold sm:text-4xl">Metodologia DMTN</h1>
-        <p className="mx-auto mt-4 font-medium text-gray-600 sm:max-w-lg">
+        <p className="mx-auto mt-4 font-medium text-gray-600 px-2 ">
           Criamos uma abordagem própria para impulsionar e transformar negócios,
           descomplicando desafios complexos por meio da tecnologia. Conheça a
           Metodologia DMTN:

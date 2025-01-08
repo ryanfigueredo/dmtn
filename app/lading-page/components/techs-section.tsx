@@ -45,7 +45,7 @@ export default function TechSection() {
       viewport={{ once: true, amount: 0.2 }} // Configura quando a animação será ativada
       variants={containerVariants}
     >
-      <motion.div className="w-96 space-y-6" variants={itemVariants}>
+      <motion.div className="w-96 space-y-6 p-4" variants={itemVariants}>
         <h1 className="text-2xl font-bold">
           Aplicamos as tecnologias e ferramentas mais avançadas do mercado no
           seu projeto.

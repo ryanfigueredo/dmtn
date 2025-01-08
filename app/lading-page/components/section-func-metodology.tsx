@@ -43,7 +43,7 @@ const FuncMetodology = () => {
   return (
     <motion.div
       ref={ref}
-      className="h-full bg-[#121212] p-10"
+      className="h-full bg-[#121212] p-20"
       variants={containerVariants}
       initial="hidden"
       animate={controls}
