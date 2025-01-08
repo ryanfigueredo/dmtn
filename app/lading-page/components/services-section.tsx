@@ -53,7 +53,7 @@ const ServicesSection: React.FC = () => {
       className="relative py-20 md:mt-14"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }} // Apenas anima ao entrar na viewport
+      viewport={{ once: true, amount: 0.2 }} // Apenas anima ao entrar na viewport
       variants={containerVariants}
     >
       <div className="container mx-auto px-8">
@@ -70,7 +70,7 @@ const ServicesSection: React.FC = () => {
             variants={textVariants}
           >
             Transformamos, aprimoramos e impulsionamos negócios de todos os
-            tamanhos pequenos, médios ou grandes – com agilidade e sem
+            tamanhos pequenos, médios ou grandes com agilidade e sem
             complicação.
           </motion.p>
         </motion.div>
