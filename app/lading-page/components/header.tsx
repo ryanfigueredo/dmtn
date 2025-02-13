@@ -5,7 +5,7 @@ import CustomSheetHeader from "./sheet-header";
 
 const Header = () => {
   return (
-    <div className="flex h-12 w-full items-center justify-between rounded md:shadow-lg p-6 md:p-10">
+    <div className="flex h-12 w-full items-center justify-between rounded md:  p-6 md:p-10">
       <div>
         <Image
           height={30}

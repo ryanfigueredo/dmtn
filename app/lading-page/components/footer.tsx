@@ -74,7 +74,7 @@ const Footer = () => {
       <div className="mt-8 border-t border-white"></div>
 
       <div className="mt-4 flex justify-center p-6 text-center text-sm text-white md:max-w-full">
-        Direitos Reservados © | DMTN DIGITAL CNPJ 00.000.000/0001-00 | Visconde
+        Direitos Reservados © | DMTN DIGITAL CNPJ 59.171.428/0001-40 | Visconde
         de Pirajá 414, Ipanema - RJ
       </div>
     </footer>
