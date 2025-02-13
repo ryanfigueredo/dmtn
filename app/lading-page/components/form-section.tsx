@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { motion } from "framer-motion"; // Importando motion
+import { motion } from "framer-motion";
 
 import { Button } from "@/app/_components/ui/button";
 import {
@@ -79,11 +79,11 @@ export function ContactForm() {
   };
 
   useEffect(() => {
-    // Intersection Observer para detectar quando os elementos entram na tela
+   
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1, // 10% do elemento visível
+      threshold: 0.1, 
     };
 
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -111,16 +111,15 @@ export function ContactForm() {
   return (
     <div className="my-10 px-8 md:my-20 md:px-2">
       <div className="flex flex-col justify-center gap-8 md:w-full md:flex-row">
-        {/* Formulário de contato */}
         <motion.div
         id="form-section"
           ref={formRef}
           className="md:w-full md:max-w-lg"
-          initial={{ opacity: 0, y: -20 }} // Inicia invisível e um pouco acima
+          initial={{ opacity: 0, y: -20 }} 
           animate={{
             opacity: isFormVisible ? 1 : 0,
             y: isFormVisible ? 0 : -20,
-          }} // Animação de opacidade e movimento no eixo Y
+          }}
           transition={{ duration: 0.5 }}
         >
           <h1 className="mb-4 text-2xl font-bold">Entre em contato</h1>
@@ -190,13 +189,12 @@ export function ContactForm() {
           )}
         </motion.div>
 
-        {/* Área lateral com informações */}
         <motion.div
           ref={sidebarRef}
           className="space-y-6 md:block md:max-w-md"
-          initial={{ opacity: 0 }} // Inicialmente invisível
-          animate={{ opacity: isSidebarVisible ? 1 : 0 }} // Animação de visibilidade
-          transition={{ duration: 0.5 }} // Tempo de animação
+          initial={{ opacity: 0 }} 
+          animate={{ opacity: isSidebarVisible ? 1 : 0 }} 
+          transition={{ duration: 0.5 }} 
         >
           <div className="rounded-lg bg-gray-100 p-6 shadow-md">
             <h3 className="mb-4 text-lg font-semibold">
