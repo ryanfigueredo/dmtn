@@ -26,7 +26,6 @@ const LandingPage: React.FC = () => {
       <FuncMetodology />
       <MetodologiaSection />
       <TechSection />
-      <ContactForm />
       <Footer />
     </div>
   );

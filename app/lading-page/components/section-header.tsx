@@ -58,7 +58,13 @@ const HeaderSection = () => {
       </motion.h1>
      
       <motion.div variants={itemVariants}>
-        <Link href="#form-section">
+        
+      <Link
+            className=""
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital"
+          >
           <Button>
             Agendar uma consultoria <ArrowUpRight />
           </Button>

@@ -19,7 +19,7 @@ const Header = () => {
       <div className="hidden gap-4 md:flex">
         <Link href="#solucoes">Soluções</Link>
         <Link href="#metodologia">Metodologia</Link>
-        <Link href="#form-section">Produtos</Link>
+        <Link href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">Produtos</Link>
       </div>
 
       <div className="flex items-center gap-4">

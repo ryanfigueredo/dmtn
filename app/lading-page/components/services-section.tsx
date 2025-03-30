@@ -145,7 +145,7 @@ const ServicesSection: React.FC = () => {
             design e estratégia personalizada.
           </motion.p>
           <motion.div variants={buttonVariants}>
-            <Link href="#form-section">
+            <Link href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">
               <Button>
               Marcar uma conversa <ArrowRight />
               </Button>
