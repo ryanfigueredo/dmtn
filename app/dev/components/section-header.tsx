@@ -16,9 +16,6 @@ const HeaderSection = () => {
     };
   }, []);
 
-  const handleDragStart = (e: React.DragEvent<HTMLImageElement>) => {
-    e.preventDefault();
-  };
 
   // Variantes de animação
   const containerVariants = {
@@ -51,7 +48,7 @@ const HeaderSection = () => {
     {/* Texto e botão */}
     <motion.div className="space-y-6 mt-9" variants={itemVariants}>
       <motion.h1
-        className="text-4xl font-medium font-space-grotesk text-[#F5F5FF] md:max-w-72 md:text-5xl"
+        className="text-4xl font-medium font-grotesk text-[#F5F5FF] md:max-w-72 md:text-5xl"
         variants={itemVariants}
       >
         O mundo constrói softwares e apps com a DMTN

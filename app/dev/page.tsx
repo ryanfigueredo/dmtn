@@ -6,15 +6,12 @@ import MetodologiaSection from "./components/section-metodology";
 import TechSection from "./components/techs-section";
 import Footer from "./components/footer";
 import FuncMetodology from "./components/section-func-metodology";
-import { ContactForm } from "./components/form-section";
 
-const LandingPage: React.FC = () => {
+const LandingPage = () => {
   return (
-    <div className="">
-     <Header />
-      
+    <div>
+      <Header />
       <HeaderSection />
-    
       <ServicesSection />
       <FuncMetodology />
       <MetodologiaSection />

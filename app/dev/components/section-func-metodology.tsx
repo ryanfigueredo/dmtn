@@ -87,9 +87,11 @@ const FuncMetodology = () => {
               Agendar meu diagnóstico <ArrowRight />
               </Button>
             </Link>
+            <div>
             <p className="mt-4 text-xs">
             Nossos especialistas estão prontos para ouvir você e cuidar do seu projeto!
             </p>
+            </div>
           </motion.div>
         </motion.div>
       </motion.div>
