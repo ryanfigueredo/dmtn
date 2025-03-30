@@ -60,13 +60,13 @@ const ServicesSection: React.FC = () => {
         {/* Título e subtítulo */}
         <motion.div className="mb-12 text-center" variants={containerVariants}>
           <motion.h2
-            className="text-2xl font-bold text-[#353232] md:text-4xl"
+            className="text-2xl font-bold text-[#F5F5FF] md:text-4xl"
             variants={textVariants}
           >
             Soluções Personalizadas para Sua Necessidade
           </motion.h2>
           <motion.p
-            className="mt-4 text-lg text-[#353232] opacity-70"
+            className="mt-4 text-lg text-[#F5F5FF] opacity-70"
             variants={textVariants}
           >
             Transformamos, aprimoramos e impulsionamos negócios de todos os
@@ -93,7 +93,7 @@ const ServicesSection: React.FC = () => {
               description:
                 "Painel de controle para anotar demandas pecuárias, gerenciar estoque de insumos e acompanhar a produtividade da fazenda de forma eficiente.",
               bgColor: "bg-white",
-              textColor: "text-[#353232]",
+              textColor: "text-[#1F1E3E]",
               circleColor: "bg-white",
             },
             {
@@ -102,7 +102,7 @@ const ServicesSection: React.FC = () => {
               description:
                 "Sistemas de PDV para emissão de notas fiscais, controle de estoque em tempo real, e integração com plataformas de pagamento.",
               bgColor: "bg-white",
-              textColor: "text-[#353232]",
+              textColor: "text-[#1F1E3E]",
               circleColor: "bg-white",
             },
             {
@@ -111,7 +111,7 @@ const ServicesSection: React.FC = () => {
               description:
                 "Desenvolvimento de plataformas e-commerce com integração para pagamento e envio automático de produtos.",
               bgColor: "bg-white",
-              textColor: "text-[#353232]",
+              textColor: "text-[#1F1E3E]",
               circleColor: "bg-white",
             },
           ].map((card, index) => (
@@ -138,7 +138,7 @@ const ServicesSection: React.FC = () => {
           variants={containerVariants}
         >
           <motion.p
-            className="mt-8 text-xl font-bold text-[#353232]"
+            className="mt-8 text-xl font-bold text-[#F5F5FF]"
             variants={textVariants}
           >
             Vamos te ajudar a estabelecer sua empresa através da Tecnologia,

@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${spaceGrotesk.variable} ${outfit.variable}`}>
-      <body className="font-outfit antialiased">
+      <body className="font-outfit antialiased bg-[#28264F]">
         <ToastProvider>
           {children}
           <ToastViewport />

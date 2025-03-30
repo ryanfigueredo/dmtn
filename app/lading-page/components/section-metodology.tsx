@@ -32,10 +32,10 @@ export default function MetodologiaSection() {
       variants={containerVariants}
     >
       {/* Título e descrição */}
-      <motion.div className="mb-12 text-center" variants={itemVariants}>
-        <h1 className="text-3xl font-bold sm:text-4xl">Metodologia DMTN</h1>
-        <p className="mx-auto mt-4 font-medium text-gray-600 px-2 ">
-          Criamos uma abordagem própria para impulsionar e transformar negócios,
+      <motion.div className="mb-2 text-center" variants={itemVariants}>
+        <h1 className="text-3xl font-bold sm:text-4xl text-[#F5F5FF]">Metodologia DMTN</h1>
+        <p className="mx-auto mt-4 font-medium text-[#F5F5FF] px-2 ">
+          Criamos uma abordagem própria para impulsionar e transformar negócios, <br />
           descomplicando desafios complexos por meio da tecnologia. Conheça a
           Metodologia DMTN:
         </p>
@@ -43,7 +43,7 @@ export default function MetodologiaSection() {
 
       {/* Conteúdo principal */}
       <motion.div
-        className="space-y-8 pb-28 text-[#353232]"
+        className="space-y-8 pb-28 text-[#1F1E3E]"
         variants={containerVariants}
       >
         {/* Primeira linha */}

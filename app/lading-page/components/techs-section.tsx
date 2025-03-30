@@ -46,15 +46,15 @@ export default function TechSection() {
       variants={containerVariants}
     >
       <motion.div className="w-96 space-y-6 p-4" variants={itemVariants}>
-        <h1 className="text-2xl font-bold">
+        <h1 className="text-2xl font-bold text-[#F5F5FF]">
           Aplicamos as tecnologias e ferramentas mais avançadas do mercado no
           seu projeto.
         </h1>
-        <p className="font-semibold text-[#353232] opacity-50">
+        <p className=" text-[#F5F5FF]">
           Projetos incríveis exigem ferramentas incríveis
         </p>
         <Link href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">
-            <Button>
+            <Button className="mt-4">
               Começar agora <ArrowUpRight />
               </Button>
             </Link>

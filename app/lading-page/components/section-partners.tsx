@@ -16,7 +16,7 @@ const SectionPartners = () => {
       </div> */}
 
       <div className="space-y-4 text-justify md:text-center">
-        <h2 className="max-w-72 text-lg text-[#353232] md:max-w-96">
+        <h2 className="max-w-72 text-lg text-[#F5F5FF] md:max-w-96">
           Mais de 50 projetos realizados com sucesso para empresas de diversos
           setores. Junte-se a nós e transforme seu negócio em um case de
           sucesso.
