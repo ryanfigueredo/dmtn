@@ -23,10 +23,10 @@ const CustomSheetHeader = () => {
           <SheetTitle>DMTN Digital</SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-4 py-4">
-          <Link href="#consultoria-gratuita">Consultoria Gratuita</Link>
-          <Link href="#solucoes">Soluções</Link>
-          <Link href="#metodologia">Metodologia</Link>
-          <Link href="#produtos">Produtos</Link>
+          <Link href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">Consultoria Gratuita</Link>
+          <Link href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">Soluções</Link>
+          <Link href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">Metodologia</Link>
+          <Link href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">Produtos</Link>
           <Link
             className=""
             target="_blank"

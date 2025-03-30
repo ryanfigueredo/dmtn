@@ -43,7 +43,7 @@ const HeaderSection = () => {
 
   return (
     <motion.div
-    className="mt-4 py-24 flex flex-col items-center gap-2 p-12 md:flex-row md:items-center md:justify-center md:gap-96"
+    className="mt-4 pt-12 flex flex-col items-center gap-2 p-12 md:flex-row md:items-center md:justify-center md:gap-96"
     variants={containerVariants}
     initial="hidden"
     animate="visible"
@@ -51,10 +51,10 @@ const HeaderSection = () => {
     {/* Texto e botão */}
     <motion.div className="space-y-6 mt-9" variants={itemVariants}>
       <motion.h1
-        className="text-4xl font-bold font-space-grotesk text-[#F5F5FF] md:max-w-72 md:text-5xl"
+        className="text-4xl font-medium font-space-grotesk text-[#F5F5FF] md:max-w-72 md:text-5xl"
         variants={itemVariants}
       >
-        O mundo constrói softwares e apps com DMTN
+        O mundo constrói softwares e apps com a DMTN
       </motion.h1>
      
       <motion.div variants={itemVariants}>
