@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 const config: Config = {
     darkMode: ["class"],
     content: [
@@ -55,7 +57,11 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		  fontFamily: {
+			sans: ['var(--font-outfit)', ...fontFamily.sans],
+			grotesk: ['var(--font-space-grotesk)', ...fontFamily.sans],
+		  }
   	}
   },
   plugins: [require("tailwindcss-animate")],

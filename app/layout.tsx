@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Space_Grotesk, Outfit } from "next/font/google";
 import "./globals.css";
 import { ToastProvider, ToastViewport } from "./_components/ui/toast";
 
@@ -9,10 +9,19 @@ export const metadata: Metadata = {
     "Transformamos ideias em soluções digitais ágeis e eficientes. Conheça nossa abordagem moderna para impulsionar negócios com tecnologia de ponta.",
 };
 
-const roboto = Roboto({
-  weight: ["400", "500", "700"],
+// Configuração das fontes
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  display: "auto",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-space-grotesk", // Definindo como variável CSS
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-outfit", // Definindo como variável CSS
+  display: "swap",
 });
 
 export default function RootLayout({
@@ -21,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className} antialiased`}>
+    <html lang="pt-BR" className={`${spaceGrotesk.variable} ${outfit.variable}`}>
+      <body className="font-outfit antialiased">
         <ToastProvider>
           {children}
           <ToastViewport />

@@ -51,7 +51,7 @@ const HeaderSection = () => {
     {/* Texto e botão */}
     <motion.div className="space-y-6" variants={itemVariants}>
       <motion.h1
-        className="text-4xl font-bold text-[#353232] md:max-w-72 md:text-5xl"
+        className="text-4xl font-bold font-space-grotesk text-[#353232] md:max-w-72 md:text-5xl"
         variants={itemVariants}
       >
         O mundo constrói softwares e apps com DMTN
