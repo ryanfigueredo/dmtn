@@ -43,50 +43,75 @@ const HeaderSection = () => {
 
   return (
     <motion.div
-      className="mt-10 flex flex-col items-center gap-2 p-12 md:flex-row md:items-center md:justify-center md:gap-96"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      {/* Texto e botão */}
-      <motion.div className="space-y-6" variants={itemVariants}>
-        <motion.h1
-          className="text-4xl font-bold text-[#353232] md:max-w-72 md:text-5xl"
-          variants={itemVariants}
-        >
-          Sua Solução 
-          Digital 
-          Começa Aqui
-        </motion.h1>
-        <motion.p
-          className="text-justify text-base text-[#353232] md:w-56 md:text-lg"
-          variants={itemVariants}
-        >
-          Realize uma consultoria gratuita para tirar sua ideia do papel com tecnologia ágil
-          e eficiente.
-        </motion.p>
-        <motion.div variants={itemVariants}>
-          <Link href="#form-section">
+    className="mt-10 flex flex-col items-center gap-2 p-12 md:flex-row md:items-center md:justify-center md:gap-96"
+    variants={containerVariants}
+    initial="hidden"
+    animate="visible"
+  >
+    {/* Texto e botão */}
+    <motion.div className="space-y-6" variants={itemVariants}>
+      <motion.h1
+        className="text-4xl font-bold text-[#353232] md:max-w-72 md:text-5xl"
+        variants={itemVariants}
+      >
+        O mundo constrói softwares e apps com DMTN
+      </motion.h1>
+     
+      <motion.div variants={itemVariants}>
+        <Link href="#form-section">
           <Button>
-            Iniciar meu projeto <ArrowUpRight />
+            Agendar uma consultoria <ArrowUpRight />
           </Button>
-          </Link>
-        </motion.div>
-      </motion.div>
-
-      {/* Imagem */}
-      <motion.div className="flex justify-center mt-4" variants={itemVariants}>
-        <Image
-          src="/working.png"
-          alt="Ilustração de lâmpadas representando ideias"
-          className="h-auto w-auto max-w-xs md:max-w-md"
-          height={473}
-          width={474}
-          priority={true}
-          onDragStart={handleDragStart} // Evitar arrastar a imagem
-        />
+        </Link>
       </motion.div>
     </motion.div>
+  
+    {/* Container relativo para posicionamento */}
+    <div className="relative flex justify-center items-center mt-4 h-[400px] w-[350px]">
+      
+      {/* Quadrado arredondado de fundo - fixo */}
+      <div 
+        className="absolute w-[333px] h-[333px] rounded-[40px] bg-[#7E8FFF]"
+        style={{
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)'
+        }}
+      />
+      
+      {/* Notebook com animação e transbordamento */}
+      <motion.div
+        className=" z-10"
+        initial={{ y: 0 }}
+        animate={{
+          y: [-10, 10, -10], // Maior amplitude de movimento
+        }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        style={{
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '120%', 
+          height: '120%'
+        }}
+      >
+        <Image 
+          src="/pc.png"
+          alt="Notebook"
+          width={2304}
+          height={2497}
+          className="object-contain w-full h-full"
+          style={{
+            filter: 'drop-shadow(0 10px 8px rgba(0,0,0,0.1))'
+          }}
+        />
+      </motion.div>
+    </div>
+  </motion.div>
   );
 };
 
