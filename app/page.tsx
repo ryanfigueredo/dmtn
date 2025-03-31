@@ -54,7 +54,7 @@ export default function Home() {
         <div className="flex items-center justify-center space-x-4">
           <div className=" bg-[#1F1E3E] h-16 w-16 items-center flex justify-center rounded-xl">
             <Link
-              href="https://api.whatsapp.com/send?phone=5521999999999&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20DMTN."
+              href="https://api.whatsapp.com/send?phone=5521997624873&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20DMTN."
               
               target="_blank"
               rel="noopener noreferrer"
