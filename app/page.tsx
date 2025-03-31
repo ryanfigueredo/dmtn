@@ -87,7 +87,7 @@ export default function Home() {
           <div className=" bg-[#1F1E3E] h-16 w-16 items-center flex justify-center rounded-xl">
             
             <Link 
-              href="https://www.facebook.com/profile.php?id=61572327404450"
+              href="https://www.facebook.com/profile.php?id=61573073610136"
               target="_blank"
                 rel="noopener noreferrer">
 
