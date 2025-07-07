@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Outfit } from "next/font/google";
 import "./globals.css";
 import { ToastProvider, ToastViewport } from "./_components/ui/toast";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "DMTN - Soluções Digitais Inovadoras",
@@ -9,18 +10,17 @@ export const metadata: Metadata = {
     "Transformamos ideias em soluções digitais ágeis e eficientes. Conheça nossa abordagem moderna para impulsionar negócios com tecnologia de ponta.",
 };
 
-// Configuração das fontes
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-space-grotesk", // Definindo como variável CSS
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
 const outfit = Outfit({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  variable: "--font-outfit", // Definindo como variável CSS
+  variable: "--font-outfit",
   display: "swap",
 });
 
@@ -32,6 +32,20 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${spaceGrotesk.variable} ${outfit.variable}`}>
       <body className="font-outfit antialiased bg-[#28264F]">
+        {/* Google Ads Tag */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17323139020"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17323139020');
+          `}
+        </Script>
+
         <ToastProvider>
           {children}
           <ToastViewport />
