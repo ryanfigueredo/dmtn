@@ -10,7 +10,7 @@ import CasesSection from "./components/cases-section";
 
 const LandingPage = () => {
   return (
-    <div className="bg-[#050510] min-h-screen">
+    <div className="bg-[#050510] min-h-screen overflow-x-hidden">
       <Header />
       <HeaderSection />
       <ServicesSection />
