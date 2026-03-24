@@ -1,120 +1,87 @@
 "use client";
 
-import { useEffect } from "react";
-import Image from "next/image";
-import { Button } from "@/app/_components/ui/button";
-import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { ArrowRight, ArrowDown } from "lucide-react";
 import Link from "next/link";
 
 const HeaderSection = () => {
-  useEffect(() => {
-    const disableRightClick = (e: MouseEvent) => e.preventDefault();
-    document.addEventListener("contextmenu", disableRightClick);
-    return () => {
-      document.removeEventListener("contextmenu", disableRightClick);
-    };
-  }, []);
-
-
-  // Variantes de animação
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.2, // Anima os filhos em sequência
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
   return (
-    <motion.div
-    className="mt-4 pt-12 flex flex-col items-center gap-2 p-12 md:flex-row md:items-center md:justify-center md:gap-96"
-    variants={containerVariants}
-    initial="hidden"
-    animate="visible"
-  >
-    {/* Texto e botão */}
-    <motion.div className="space-y-6 mt-9" variants={itemVariants}>
-      <motion.h1
-        className="text-4xl font-medium font-grotesk text-[#F5F5FF] md:max-w-72 md:text-5xl"
-        variants={itemVariants}
-      >
-        O mundo constrói softwares e apps com a DMTN
-      </motion.h1>
-     
-      <motion.div variants={itemVariants}>
-        
-      <Link
-            className=""
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Orbs */}
+      <div className="absolute w-[600px] h-[600px] rounded-full blur-3xl bg-indigo-600/10 -top-[200px] -right-[200px] pointer-events-none animate-[float_6s_ease-in-out_infinite]" />
+      <div className="absolute w-[400px] h-[400px] rounded-full blur-3xl bg-purple-600/8 -bottom-[100px] -left-[100px] pointer-events-none animate-[float_6s_ease-in-out_2s_infinite]" />
+      <div className="absolute w-[300px] h-[300px] rounded-full blur-3xl bg-blue-600/6 top-[40%] left-[60%] pointer-events-none animate-[float_6s_ease-in-out_infinite]" />
+
+      <style>{`
+        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+      `}</style>
+
+      <div className="relative max-w-5xl mx-auto px-6 text-center pt-24 pb-20">
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-8"
+        >
+          <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] text-indigo-300 text-sm font-medium">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-400" />
+            </span>
+            Software House — Rio de Janeiro
+          </span>
+        </motion.div>
+
+        <motion.h1
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight text-white mb-8"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
+        >
+          Transformamos empresas com{" "}
+          <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            tecnologia sob medida
+          </span>
+        </motion.h1>
+
+        <motion.p
+          className="text-lg sm:text-xl text-zinc-400 leading-relaxed mb-12 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+        >
+          ERPs completos, apps nativos, sistemas com IA, ponto digital com
+          reconhecimento facial e automacoes que eliminam processos manuais.
+        </motion.p>
+
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.45 }}
+        >
+          <Link
+            href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital"
+            className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
           >
-          <Button>
-            Agendar uma consultoria <ArrowUpRight />
-          </Button>
-        </Link>
-      </motion.div>
-    </motion.div>
-  
-    {/* Container relativo para posicionamento */}
-    <div className="relative flex justify-center items-center mt-4 h-[400px] w-[350px]">
-      
-      {/* Quadrado arredondado de fundo - fixo */}
-      <div 
-        className="absolute w-[333px] h-[333px] rounded-[40px] bg-[#7E8FFF]"
-        style={{
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)'
-        }}
-      />
-      
-      {/* Notebook com animação e transbordamento */}
-      <motion.div
-        className=" z-10"
-        initial={{ y: 0 }}
-        animate={{
-          y: [-10, 10, -10], // Maior amplitude de movimento
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        style={{
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          width: '120%', 
-          height: '120%'
-        }}
-      >
-        <Image 
-          src="/pc.png"
-          alt="Notebook"
-          width={2304}
-          height={2497}
-          className="object-contain w-full h-full"
-          style={{
-            filter: 'drop-shadow(0 10px 8px rgba(0,0,0,0.1))'
-          }}
-        />
-      </motion.div>
-    </div>
-  </motion.div>
+            Agendar diagnostico gratuito
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </Link>
+          <a
+            href="#cases"
+            className="inline-flex items-center gap-2 text-zinc-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"
+          >
+            Ver cases de sucesso
+            <ArrowDown className="w-4 h-4" />
+          </a>
+        </motion.div>
+      </div>
+
+      {/* Bottom line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent" />
+    </section>
   );
 };
 

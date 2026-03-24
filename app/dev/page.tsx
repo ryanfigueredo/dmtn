@@ -6,15 +6,17 @@ import MetodologiaSection from "./components/section-metodology";
 import TechSection from "./components/techs-section";
 import Footer from "./components/footer";
 import FuncMetodology from "./components/section-func-metodology";
+import CasesSection from "./components/cases-section";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="bg-[#050510] min-h-screen">
       <Header />
       <HeaderSection />
       <ServicesSection />
-      <FuncMetodology />
+      <CasesSection />
       <MetodologiaSection />
+      <FuncMetodology />
       <TechSection />
       <Footer />
     </div>

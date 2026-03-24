@@ -1,23 +1,66 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import CustomSheetHeader from "./sheet-header";
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handler = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
+
   return (
-    <header className="fixed left-0 right-0 z-50 mx-auto w-[calc(100%-48px)] rounded-full max-w-[70%] border-b bg-[#F5F5FF]">
-      <div className="flex h-2 items-center justify-between p-6 md:p-8">
-        <div>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-[#050510]/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20"
+          : ""
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <Link href="/">
           <Image
-            height={30}
-            width={50}
-            className="md:h-[40px] md:w-[80px] filter brightness-0 invert-[10%] sepia-[40%] saturate-[1000%] hue-rotate-[210deg]"
-            style={{
-              filter: 'brightness(0) invert(10%) sepia(40%) saturate(1000%) hue-rotate(210deg)'
-            }}
+            height={24}
+            width={40}
+            className="brightness-0 invert opacity-90"
             src="/dmtn.svg"
-            alt="Logo"
+            alt="DMTN"
           />
+        </Link>
+
+        <nav className="hidden md:flex items-center gap-8 text-sm text-zinc-400">
+          <a href="#solucoes" className="hover:text-white transition-colors">
+            Solucoes
+          </a>
+          <a href="#cases" className="hover:text-white transition-colors">
+            Cases
+          </a>
+          <a href="#metodologia" className="hover:text-white transition-colors">
+            Metodologia
+          </a>
+          <a href="#tecnologias" className="hover:text-white transition-colors">
+            Tecnologias
+          </a>
+        </nav>
+
+        <div className="flex items-center gap-3">
+          <Link
+            href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex text-sm font-medium px-5 py-2 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:border-indigo-500/30 transition-all"
+          >
+            Falar com especialista
+          </Link>
+          <div className="md:hidden">
+            <CustomSheetHeader />
+          </div>
         </div>
-        <CustomSheetHeader />
       </div>
     </header>
   );
