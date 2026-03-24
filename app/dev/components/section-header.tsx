@@ -28,7 +28,7 @@ const HeaderSection = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-400" />
             </span>
-            Software House — Rio de Janeiro
+            Software House — Curitiba
           </span>
         </motion.div>
 
@@ -60,25 +60,15 @@ const HeaderSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
         >
-          <div className="flex flex-col items-center">
-            <Link
-              href="https://crm.dmtn.com.br/apresentacao"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
-            >
-              Agendar diagnóstico gratuito
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </Link>
-            <Link
-              href="https://wa.me/5521997624873"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-zinc-500/60 hover:text-zinc-400 transition-colors mt-2"
-            >
-              Prefere falar direto? WhatsApp →
-            </Link>
-          </div>
+          <Link
+            href="https://crm.dmtn.com.br/apresentacao"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
+          >
+            Agendar diagnóstico gratuito
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </Link>
           <a
             href="#cases"
             className="inline-flex items-center gap-2 text-zinc-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"

@@ -49,7 +49,7 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="hidden sm:flex flex-col items-center">
+          <div className="hidden sm:flex items-center">
             <Link
               href="https://crm.dmtn.com.br/apresentacao"
               target="_blank"
@@ -57,14 +57,6 @@ const Header = () => {
               className="inline-flex text-sm font-medium px-5 py-2 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:border-indigo-500/30 transition-all"
             >
               Falar com especialista
-            </Link>
-            <Link
-              href="https://wa.me/5521997624873"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[11px] text-zinc-500 hover:text-zinc-400 transition-colors mt-1"
-            >
-              Prefere falar direto? WhatsApp →
             </Link>
           </div>
           <div className="md:hidden">

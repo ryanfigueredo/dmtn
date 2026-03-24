@@ -44,14 +44,6 @@ const CustomSheetHeader = () => {
               Falar com especialista
             </Button>
           </Link>
-          <Link
-            href="https://wa.me/5521997624873"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-center text-[11px] text-zinc-500 hover:text-zinc-400 transition-colors mt-2"
-          >
-            Prefere falar direto? WhatsApp →
-          </Link>
         </nav>
       </SheetContent>
     </Sheet>
