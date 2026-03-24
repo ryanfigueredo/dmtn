@@ -51,7 +51,7 @@ const HeaderSection = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           ERPs completos, apps nativos, sistemas com IA, ponto digital com
-          reconhecimento facial e automacoes que eliminam processos manuais.
+          reconhecimento facial e automações que eliminam processos manuais.
         </motion.p>
 
         <motion.div
@@ -60,15 +60,25 @@ const HeaderSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
         >
-          <Link
-            href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
-          >
-            Agendar diagnostico gratuito
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </Link>
+          <div className="flex flex-col items-center">
+            <Link
+              href="https://crm.dmtn.com.br/apresentacao"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
+            >
+              Agendar diagnóstico gratuito
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+            <Link
+              href="https://wa.me/5521997624873"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-zinc-500/60 hover:text-zinc-400 transition-colors mt-2"
+            >
+              Prefere falar direto? WhatsApp →
+            </Link>
+          </div>
           <a
             href="#cases"
             className="inline-flex items-center gap-2 text-zinc-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"

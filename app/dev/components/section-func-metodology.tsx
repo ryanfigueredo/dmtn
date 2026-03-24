@@ -21,15 +21,15 @@ const FuncMetodology = () => {
             Comece agora
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Agende seu diagnostico{" "}
+            Agende seu diagnóstico{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               gratuito
             </span>
           </h2>
           <p className="text-zinc-400 max-w-md mx-auto">
-            Assim como em uma consulta medica, o diagnostico e a etapa inicial
+            Assim como em uma consulta médica, o diagnóstico é a etapa inicial
             para entender os sintomas, identificar problemas e prescrever as
-            melhores solucoes para o seu negocio.
+            melhores soluções para o seu negócio.
           </p>
         </motion.div>
 
@@ -46,26 +46,34 @@ const FuncMetodology = () => {
             </div>
 
             <h3 className="text-white font-semibold text-lg mb-2">
-              Diagnostico: o check-up do seu projeto
+              Diagnóstico: o check-up do seu projeto
             </h3>
             <p className="text-zinc-400 text-sm mb-8 max-w-md mx-auto leading-relaxed">
-              Nossos especialistas atuam como medicos para o seu negocio, prontos
-              para ouvir suas necessidades, realizar uma analise detalhada e
-              indicar os melhores caminhos para resultados incriveis.
+              Nossos especialistas atuam como médicos para o seu negócio, prontos
+              para ouvir suas necessidades, realizar uma análise detalhada e
+              indicar os melhores caminhos para resultados incríveis.
             </p>
 
             <Link
-              href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
+              href="https://crm.dmtn.com.br/apresentacao"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
             >
-              Agendar meu diagnostico
+              Agendar meu diagnóstico
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+            <Link
+              href="https://wa.me/5521997624873"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-zinc-500/60 hover:text-zinc-400 transition-colors mt-2 inline-block"
+            >
+              Prefere falar direto? WhatsApp →
             </Link>
 
             <p className="text-xs text-zinc-600 mt-4">
-              Nossos especialistas estao prontos para ouvir voce e cuidar do seu
+              Nossos especialistas estão prontos para ouvir você e cuidar do seu
               projeto!
             </p>
           </div>

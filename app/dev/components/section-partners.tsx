@@ -23,11 +23,21 @@ const SectionPartners = () => {
         </h2>
         
 
-        <Link className="" href="https://wa.me/5521997624873?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20DMTN%20Digital">
-          <Button className="md:mt-8">
-          Marcar uma conversa <ArrowRight />
-          </Button>
-        </Link>
+        <div className="flex flex-col items-center">
+          <Link href="https://crm.dmtn.com.br/apresentacao" target="_blank" rel="noopener noreferrer">
+            <Button className="md:mt-8">
+              Marcar uma conversa <ArrowRight />
+            </Button>
+          </Link>
+          <Link
+            href="https://wa.me/5521997624873"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-zinc-500/60 hover:text-zinc-400 transition-colors mt-2"
+          >
+            Prefere falar direto? WhatsApp →
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -38,21 +38,31 @@ export default function TechSection() {
               Stack
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight">
-              Tecnologias e ferramentas mais avancadas do mercado
+              Tecnologias e ferramentas mais avançadas do mercado
             </h2>
             <p className="text-zinc-400">
-              Projetos incriveis exigem ferramentas incriveis. Usamos o que ha de
-              melhor para entregar performance, seguranca e escalabilidade.
+              Projetos incríveis exigem ferramentas incríveis. Usamos o que há de
+              melhor para entregar performance, segurança e escalabilidade.
             </p>
-            <Link
-              href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
-            >
-              Comecar agora
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </Link>
+            <div className="flex flex-col">
+              <Link
+                href="https://crm.dmtn.com.br/apresentacao"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
+              >
+                Começar agora
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+              <Link
+                href="https://wa.me/5521997624873"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-zinc-500/60 hover:text-zinc-400 transition-colors mt-1.5"
+              >
+                Prefere falar direto? WhatsApp →
+              </Link>
+            </div>
           </motion.div>
 
           {/* Grid */}

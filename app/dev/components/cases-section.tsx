@@ -63,7 +63,7 @@ const klStats = [
   {
     value: 350,
     suffix: "",
-    label: "Folhas/mes eliminadas",
+    label: "Folhas/mês eliminadas",
     Icon: Trash2,
   },
   {
@@ -89,17 +89,17 @@ const klStats = [
 const klModules = [
   {
     title: "Ponto Digital",
-    desc: "App com selfie, GPS, geofence e modo offline. Reconhecimento facial via relogios EVO com servidor WebSocket dedicado.",
+    desc: "App com selfie, GPS, geofence e modo offline. Reconhecimento facial via relógios EVO com servidor WebSocket dedicado.",
     highlight: true,
   },
   {
     title: "RH Completo",
-    desc: "Gestao de colaboradores, crachas digitais, banco de talentos, vagas sociais e processos juridicos trabalhistas.",
+    desc: "Gestão de colaboradores, crachás digitais, banco de talentos, vagas sociais e processos jurídicos trabalhistas.",
     highlight: false,
   },
   {
     title: "Checklists Operacionais",
-    desc: "Inspecoes em campo com fotos georeferenciadas, QR codes por unidade, templates personalizaveis e dashboard de conformidade.",
+    desc: "Inspeções em campo com fotos georreferenciadas, QR codes por unidade, templates personalizáveis e dashboard de conformidade.",
     highlight: false,
   },
   {
@@ -109,7 +109,7 @@ const klModules = [
   },
   {
     title: "Compliance e LGPD",
-    desc: "Termos de implantacao digitais, portal de exclusao de dados, manual tecnico-juridico e conformidade automatizada.",
+    desc: "Termos de implantação digitais, portal de exclusão de dados, manual técnico-jurídico e conformidade automatizada.",
     highlight: false,
   },
   {
@@ -133,10 +133,10 @@ const techStack = [
 ];
 
 const rfidStats = [
-  { label: "Inventario manual", value: "8h + 2 pessoas", positive: false },
+  { label: "Inventário manual", value: "8h + 2 pessoas", positive: false },
   { label: "Com RFID", value: "15min + 1 pessoa", positive: true },
-  { label: "Precisao", value: "99,9%", positive: true },
-  { label: "Reducao de perdas", value: "-80%", positive: true },
+  { label: "Precisão", value: "99,9%", positive: true },
+  { label: "Redução de perdas", value: "-80%", positive: true },
 ];
 
 export default function CasesSection() {
@@ -163,7 +163,7 @@ export default function CasesSection() {
             </span>
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto text-lg">
-            Empresas que confiaram na DMTN para revolucionar suas operacoes.
+            Empresas que confiaram na DMTN para revolucionar suas operações.
           </p>
         </motion.div>
 
@@ -194,7 +194,7 @@ export default function CasesSection() {
                   KL Facilities
                 </h3>
                 <p className="text-zinc-500">
-                  ERP completo — Gestao de Facilities e Terceirizacao
+                  ERP completo — Gestão de Facilities e Terceirização
                 </p>
               </div>
             </div>
@@ -202,12 +202,12 @@ export default function CasesSection() {
             {/* Quote */}
             <blockquote className="text-zinc-300 text-base sm:text-lg leading-relaxed mb-10 border-l-2 border-indigo-500/30 pl-6">
               &ldquo;Antes da DMTN, a KL Facilities vivia uma realidade que
-              muitos empresarios enfrentam: a bagunca operacional oculta em
+              muitos empresários enfrentam: a bagunça operacional oculta em
               pilhas de papel. Eram cerca de{" "}
               <span className="text-indigo-300 font-semibold">
-                350 folhas de ponto por funcionario
+                350 folhas de ponto por funcionário
               </span>{" "}
-              todos os meses. Um pesadelo logistico e administrativo, sem contar
+              todos os meses. Um pesadelo logístico e administrativo, sem contar
               o risco de perdas e erros.&rdquo;
             </blockquote>
 
@@ -232,7 +232,7 @@ export default function CasesSection() {
             {/* Modules */}
             <div className="mb-8">
               <h4 className="text-sm font-medium text-zinc-400 uppercase tracking-wider mb-4">
-                Modulos entregues
+                Módulos entregues
               </h4>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {klModules.map((mod, i) => (
@@ -336,8 +336,8 @@ export default function CasesSection() {
               ))}
             </div>
             <p className="text-xs text-zinc-500 leading-relaxed">
-              Hardware incluso com implementacao completa. Leitura por
-              proximidade, relatorios automaticos e integracao com sistemas
+              Hardware incluso com implementação completa. Leitura por
+              proximidade, relatórios automáticos e integração com sistemas
               existentes.
             </p>
           </motion.div>
@@ -364,16 +364,16 @@ export default function CasesSection() {
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed mb-5">
               Sistema completo de pedidos via WhatsApp com apps nativos (Kotlin +
-              iOS) que imprimem diretamente na impressora termica. Integrado com
-              gestao de cardapio e acompanhamento em tempo real.
+              iOS) que imprimem diretamente na impressora térmica. Integrado com
+              gestão de cardápio e acompanhamento em tempo real.
             </p>
             <div className="flex flex-wrap gap-2">
               {[
                 "Kotlin",
                 "Swift",
-                "Impressao Termica",
+                "Impressão Térmica",
                 "WhatsApp API",
-                "Cardapio Digital",
+                "Cardápio Digital",
               ].map((tech) => (
                 <span
                   key={tech}

@@ -14,38 +14,38 @@ import {
 const services = [
   {
     Icon: Monitor,
-    title: "ERPs e Sistemas de Gestao",
-    desc: "Sistemas completos sob medida: financeiro, RH, operacoes, compliance, auditoria e dashboards em tempo real.",
+    title: "ERPs e Sistemas de Gestão",
+    desc: "Sistemas completos sob medida: financeiro, RH, operações, compliance, auditoria e dashboards em tempo real.",
     tag: "Web App",
   },
   {
     Icon: Smartphone,
     title: "Apps Nativos iOS e Android",
-    desc: "Aplicativos nativos em Kotlin e Swift, alem de apps cross-platform com React Native e Expo.",
+    desc: "Aplicativos nativos em Kotlin e Swift, além de apps cross-platform com React Native e Expo.",
     tag: "Mobile",
   },
   {
     Icon: ScanFace,
     title: "Ponto Digital e Biometria",
-    desc: "Reconhecimento facial, geofence GPS, selfie com validacao, relogios EVO integrados via WebSocket.",
+    desc: "Reconhecimento facial, geofence GPS, selfie com validação, relógios EVO integrados via WebSocket.",
     tag: "IoT + Mobile",
   },
   {
     Icon: MessageSquare,
-    title: "IA e Automacao",
-    desc: "Chatbots inteligentes, qualificacao de leads automatica, atendimento via WhatsApp com IA generativa.",
+    title: "IA e Automação",
+    desc: "Chatbots inteligentes, qualificação de leads automática, atendimento via WhatsApp com IA generativa.",
     tag: "IA",
   },
   {
     Icon: Tag,
     title: "Controle RFID",
-    desc: "Inventario em 15 minutos com 99,9% de precisao. Hardware incluso, implementacao completa.",
+    desc: "Inventário em 15 minutos com 99,9% de precisão. Hardware incluso, implementação completa.",
     tag: "IoT",
   },
   {
     Icon: Shield,
     title: "Compliance e LGPD",
-    desc: "Termos digitais, exclusao de dados, conformidade juridica e manuais tecnicos integrados ao sistema.",
+    desc: "Termos digitais, exclusão de dados, conformidade jurídica e manuais técnicos integrados ao sistema.",
     tag: "Juridico",
   },
 ];
@@ -68,13 +68,13 @@ const ServicesSection: React.FC = () => {
             O que fazemos
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">
-            Solucoes que{" "}
+            Soluções que{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              movem negocios
+              movem negócios
             </span>
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto text-lg">
-            Da ideia ao produto em producao. Construimos sistemas robustos que
+            Da ideia ao produto em produção. Construímos sistemas robustos que
             resolvem problemas reais.
           </p>
         </motion.div>

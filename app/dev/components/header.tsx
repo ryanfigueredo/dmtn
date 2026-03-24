@@ -35,7 +35,7 @@ const Header = () => {
 
         <nav className="hidden md:flex items-center gap-8 text-sm text-zinc-400">
           <a href="#solucoes" className="hover:text-white transition-colors">
-            Solucoes
+            Soluções
           </a>
           <a href="#cases" className="hover:text-white transition-colors">
             Cases
@@ -49,14 +49,24 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex text-sm font-medium px-5 py-2 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:border-indigo-500/30 transition-all"
-          >
-            Falar com especialista
-          </Link>
+          <div className="hidden sm:flex flex-col items-center">
+            <Link
+              href="https://crm.dmtn.com.br/apresentacao"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex text-sm font-medium px-5 py-2 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:border-indigo-500/30 transition-all"
+            >
+              Falar com especialista
+            </Link>
+            <Link
+              href="https://wa.me/5521997624873"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] text-zinc-500 hover:text-zinc-400 transition-colors mt-1"
+            >
+              Prefere falar direto? WhatsApp →
+            </Link>
+          </div>
           <div className="md:hidden">
             <CustomSheetHeader />
           </div>

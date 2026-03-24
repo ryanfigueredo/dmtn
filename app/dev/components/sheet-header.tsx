@@ -23,7 +23,7 @@ const CustomSheetHeader = () => {
         </SheetHeader>
         <nav className="flex flex-col gap-4 py-6">
           <a href="#solucoes" className="text-zinc-300 hover:text-white transition-colors">
-            Solucoes
+            Soluções
           </a>
           <a href="#cases" className="text-zinc-300 hover:text-white transition-colors">
             Cases
@@ -37,12 +37,20 @@ const CustomSheetHeader = () => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
+            href="https://crm.dmtn.com.br/apresentacao"
             className="mt-4"
           >
             <Button className="w-full bg-indigo-500 hover:bg-indigo-400 text-white">
               Falar com especialista
             </Button>
+          </Link>
+          <Link
+            href="https://wa.me/5521997624873"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-center text-[11px] text-zinc-500 hover:text-zinc-400 transition-colors mt-2"
+          >
+            Prefere falar direto? WhatsApp →
           </Link>
         </nav>
       </SheetContent>

@@ -55,11 +55,11 @@ const Footer = () => {
 
         <div className="mt-6 pt-6 border-t border-zinc-800/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-zinc-700">
-            DMTN Digital — Tecnologia e Solucoes
+            DMTN Digital — Tecnologia e Soluções
           </p>
           <nav className="flex items-center gap-6 text-xs text-zinc-600">
             <a href="#solucoes" className="hover:text-zinc-400 transition-colors">
-              Solucoes
+              Soluções
             </a>
             <a href="#cases" className="hover:text-zinc-400 transition-colors">
               Cases

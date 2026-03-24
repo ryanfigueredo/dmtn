@@ -6,25 +6,25 @@ const steps = [
   {
     step: "01",
     title: "Explorar",
-    desc: "Imersao no seu negocio. Entendemos processos, dores e oportunidades antes de escrever uma linha de codigo.",
+    desc: "Imersão no seu negócio. Entendemos processos, dores e oportunidades antes de escrever uma linha de código.",
     gradient: "from-blue-500/20",
   },
   {
     step: "02",
     title: "Planejar",
-    desc: "Arquitetura da solucao, design de interfaces e planejamento de entregas com milestones claros.",
+    desc: "Arquitetura da solução, design de interfaces e planejamento de entregas com milestones claros.",
     gradient: "from-indigo-500/20",
   },
   {
     step: "03",
     title: "Construir",
-    desc: "Desenvolvimento agil com entregas parciais. Voce acompanha cada evolucao em tempo real.",
+    desc: "Desenvolvimento ágil com entregas parciais. Você acompanha cada evolução em tempo real.",
     gradient: "from-purple-500/20",
   },
   {
     step: "04",
-    title: "Lancar",
-    desc: "Deploy, treinamento da equipe e suporte continuo. Seu sistema nasce pronto para escalar.",
+    title: "Lançar",
+    desc: "Deploy, treinamento da equipe e suporte contínuo. Seu sistema nasce pronto para escalar.",
     gradient: "from-violet-500/20",
   },
 ];
@@ -50,7 +50,7 @@ export default function MetodologiaSection() {
             </span>
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto text-lg">
-            Quatro etapas para transformar sua operacao sem complicacao.
+            Quatro etapas para transformar sua operação sem complicação.
           </p>
         </motion.div>
 
