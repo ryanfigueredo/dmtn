@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useCallback, useEffect } from "react";
+import Image from "next/image";
 import {
   Trash2,
   Zap,
@@ -179,8 +180,14 @@ export default function CasesSection() {
           <div className="relative">
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
-              <div className="w-14 h-14 rounded-2xl bg-indigo-500/15 flex items-center justify-center text-indigo-300 font-bold text-xl border border-indigo-500/20">
-                KL
+              <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center border border-indigo-500/20 overflow-hidden p-2">
+                <Image
+                  src="/kl copy.svg"
+                  alt="Logo da KL Facilities"
+                  width={44}
+                  height={44}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
@@ -262,8 +269,14 @@ export default function CasesSection() {
 
             {/* Author */}
             <div className="flex items-center gap-4 mt-8 pt-8 border-t border-zinc-800/50">
-              <div className="w-12 h-12 rounded-full bg-indigo-500/15 flex items-center justify-center text-indigo-300 font-bold text-lg border border-indigo-500/20">
-                LT
+              <div className="w-12 h-12 rounded-full border border-indigo-500/20 overflow-hidden">
+                <Image
+                  src="/luciano.png"
+                  alt="Foto de Luciano Tuyuty"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex-1">
                 <p className="text-white font-semibold">Luciano Tuyuty</p>
