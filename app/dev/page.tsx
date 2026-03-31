@@ -7,12 +7,14 @@ import TechSection from "./components/techs-section";
 import Footer from "./components/footer";
 import FuncMetodology from "./components/section-func-metodology";
 import CasesSection from "./components/cases-section";
+import InstitucionalSection from "./components/section-institucional";
 
 const LandingPage = () => {
   return (
     <div className="bg-[#050510] min-h-screen overflow-x-hidden">
       <Header />
       <HeaderSection />
+      <InstitucionalSection />
       <ServicesSection />
       <CasesSection />
       <MetodologiaSection />
