@@ -119,7 +119,7 @@ export default function Home() {
         <div className="z-50 w-full">
           {/* Versão desktop (hidden em mobile) */}
           <div className="hidden md:flex md:w-screen md:px-10 text-sm justify-between text-[#7E8FFF] relative">
-            <p>Rua Visconde de Pirajá 414, Ipanema - RJ</p>
+            <p>R. Gen. Mário Tourinho, 1746 - 1601 - Campina do Siqueira, Curitiba - PR, 80740-000</p>
             <p className="absolute left-1/2 transform -translate-x-1/2">
               <a href="#" className="hover:underline">Política de Privacidade</a>
             </p>
@@ -128,11 +128,11 @@ export default function Home() {
 
           {/* Versão mobile (hidden em desktop) */}
           <div className="md:hidden flex flex-col items-center gap-4 py-4 text-sm text-[#7E8FFF]">
-            <p>Rua Visconde de Pirajá 414, Ipanema - RJ</p>
+            <p>R. Gen. Mário Tourinho, 1746 - 1601 - Campina do Siqueira, Curitiba - PR, 80740-000</p>
             <p>
               <a href="#" className="hover:underline">Política de Privacidade</a>
             </p>
-            <p>@dmtnsistemas - 2025</p>
+            <p>@dmtnsistemas - 2026</p>
           </div>
         </div>
       </div>
