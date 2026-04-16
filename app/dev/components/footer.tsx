@@ -15,7 +15,7 @@ const Footer = () => {
               alt="DMTN"
             />
             <p className="text-xs text-zinc-600">
-              CNPJ: 59.171.428/0001-40 | Visconde de Piraja 414, Ipanema - RJ
+              CNPJ: 59.171.428/0001-40 | General Mário Tourinho, 1746, Curitiba-PR
             </p>
           </div>
 
@@ -68,10 +68,10 @@ const Footer = () => {
               Metodologia
             </a>
             <Link
-              href="mailto:contato@dmtn.com.br"
+              href="mailto:ryan@dmtn.com.br"
               className="hover:text-zinc-400 transition-colors"
             >
-              contato@dmtn.com.br
+              ryan@dmtn.com.br
             </Link>
           </nav>
         </div>
