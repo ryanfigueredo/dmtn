@@ -23,6 +23,7 @@ import {
   ToastTitle,
   ToastDescription,
 } from "@/app/_components/ui/toast";
+import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
 
 const formSchema = z.object({
   name: z
@@ -69,6 +70,10 @@ export function ContactForm() {
       if (!response.ok) {
         throw new Error("Erro ao enviar o e-mail.");
       }
+
+      // Google Ads: conversão de form enviado
+      trackConversion(CONVERSION_SEND_TO.contactForm);
+      trackEvent("generate_lead", { source: "contact_form" });
 
       setShowToast(true);
       form.reset();

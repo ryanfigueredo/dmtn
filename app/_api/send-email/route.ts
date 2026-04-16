@@ -35,6 +35,24 @@ export async function POST(req: Request) {
       },
     });
 
+    // Notificar CRM (cria lead + dispara WhatsApp pro comercial)
+    const crmWebhook = process.env.CRM_LEAD_WEBHOOK_URL;
+    const crmSecret = process.env.CRM_WEBHOOK_SECRET;
+    if (crmWebhook && crmSecret) {
+      try {
+        await fetch(crmWebhook, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-site-secret": crmSecret,
+          },
+          body: JSON.stringify({ name, email, message, source: "site_contact_form" }),
+        });
+      } catch (err) {
+        console.error("Falha ao notificar CRM:", err);
+      }
+    }
+
     return NextResponse.json({ message: "E-mail enviado com sucesso!" });
   } catch (error) {
     console.error("Erro:", error);

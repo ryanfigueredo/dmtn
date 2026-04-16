@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import CustomSheetHeader from "./sheet-header";
+import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -54,6 +55,10 @@ const Header = () => {
               href="https://crm.dmtn.com.br/apresentacao"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                trackConversion(CONVERSION_SEND_TO.scheduleClick);
+                trackEvent("cta_click", { location: "header", label: "Falar com especialista" });
+              }}
               className="inline-flex text-sm font-medium px-5 py-2 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:border-indigo-500/30 transition-all"
             >
               Falar com especialista

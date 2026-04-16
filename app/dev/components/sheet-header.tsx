@@ -8,6 +8,7 @@ import {
 } from "@/app/_components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
 
 const CustomSheetHeader = () => {
   return (
@@ -38,6 +39,10 @@ const CustomSheetHeader = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://crm.dmtn.com.br/apresentacao"
+            onClick={() => {
+              trackConversion(CONVERSION_SEND_TO.scheduleClick);
+              trackEvent("cta_click", { location: "mobile_sheet", label: "Falar com especialista" });
+            }}
             className="mt-4"
           >
             <Button className="w-full bg-indigo-500 hover:bg-indigo-400 text-white">

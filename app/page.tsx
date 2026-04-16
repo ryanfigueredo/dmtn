@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./_components/ui/button";
 import Link from "next/link";
+import { TrackedLink } from "./_components/tracked-link";
 
 
 export default function Home() {
@@ -32,10 +33,14 @@ export default function Home() {
             </div>
             
             <Button asChild className="w-fit bg-[#7E8FFF] text-[#F5F5FF] rounded-full hover:bg-[#7E8FFF]/90">
-              <Link href="/dev" className="flex items-center gap-2">
+              <TrackedLink
+                href="/dev"
+                event="home_saiba_mais_click"
+                className="flex items-center gap-2"
+              >
                 Saiba mais
                 <ArrowRight size={18} />
-              </Link>
+              </TrackedLink>
             </Button>
           </div>
 
@@ -53,11 +58,13 @@ export default function Home() {
      
         <div className="flex items-center justify-center space-x-4">
           <div className=" bg-[#1F1E3E] h-16 w-16 items-center flex justify-center rounded-xl">
-            <Link
+            <TrackedLink
               href="https://api.whatsapp.com/send?phone=5521997624873&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20DMTN."
-              
               target="_blank"
               rel="noopener noreferrer"
+              conversion="whatsappClick"
+              event="whatsapp_click"
+              eventParams={{ location: "home" }}
             >
             <Image
               src="/wpp.svg"
@@ -65,8 +72,8 @@ export default function Home() {
               width={28}
               height={28}
             />
-            </Link>
-            
+            </TrackedLink>
+
           </div>
 
           <div className=" bg-[#1F1E3E] h-16 w-16 items-center flex justify-center rounded-xl">

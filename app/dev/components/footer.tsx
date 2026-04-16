@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
 
 const Footer = () => {
   return (
@@ -24,6 +27,10 @@ const Footer = () => {
               href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                trackConversion(CONVERSION_SEND_TO.whatsappClick);
+                trackEvent("whatsapp_click", { location: "footer" });
+              }}
               className="text-zinc-600 hover:text-indigo-400 transition-colors"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
