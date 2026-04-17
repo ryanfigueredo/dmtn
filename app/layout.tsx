@@ -43,6 +43,11 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17323130920');
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17323130920/1KCDCO7xgJ4cEKiAqMRA',
+              'value': 1.0,
+              'currency': 'BRL'
+            });
           `}
         </Script>
 

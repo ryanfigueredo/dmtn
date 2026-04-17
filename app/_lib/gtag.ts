@@ -15,6 +15,8 @@ export const GA_CONVERSION_ID = "AW-17323130920";
  * Enquanto não houver o send_to, os eventos caem só como "event" (sem conversão).
  */
 export const CONVERSION_SEND_TO = {
+  // Visualização de página (page view conversion)
+  pageView: "AW-17323130920/1KCDCO7xgJ4cEKiAqMRA",
   // Form de contato enviado no site dmtn.com.br
   contactForm: "AW-17323130920/CONTACT_FORM_LABEL",
   // Clique em "Agendar diagnóstico gratuito" / "Falar com especialista"
