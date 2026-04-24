@@ -7,7 +7,6 @@ import {
   SheetHeader,
 } from "@/app/_components/ui/sheet";
 import { Menu } from "lucide-react";
-import Link from "next/link";
 import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
 
 const CustomSheetHeader = () => {
@@ -35,10 +34,8 @@ const CustomSheetHeader = () => {
           <a href="#tecnologias" className="text-zinc-300 hover:text-white transition-colors">
             Tecnologias
           </a>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://crm.dmtn.com.br/apresentacao"
+          <a
+            href="#agendar"
             onClick={() => {
               trackConversion(CONVERSION_SEND_TO.scheduleClick);
               trackEvent("cta_click", { location: "mobile_sheet", label: "Falar com especialista" });
@@ -48,7 +45,7 @@ const CustomSheetHeader = () => {
             <Button className="w-full bg-indigo-500 hover:bg-indigo-400 text-white">
               Falar com especialista
             </Button>
-          </Link>
+          </a>
         </nav>
       </SheetContent>
     </Sheet>

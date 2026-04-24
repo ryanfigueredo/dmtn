@@ -9,8 +9,9 @@ import {
   CheckCircle,
   Smartphone,
   Star,
-  Tag,
-  MessageCircle,
+  Scale,
+  BarChart3,
+  ArrowRight,
 } from "lucide-react";
 
 function useAnimatedCounter(end: number, duration: number) {
@@ -132,12 +133,8 @@ const techStack = [
   "LGPD",
 ];
 
-const rfidStats = [
-  { label: "Inventário manual", value: "8h + 2 pessoas", positive: false },
-  { label: "Com RFID", value: "15min + 1 pessoa", positive: true },
-  { label: "Precisão", value: "99,9%", positive: true },
-  { label: "Redução de perdas", value: "-80%", positive: true },
-];
+const mglTechs = ["Next.js", "Prisma", "PostgreSQL", "AWS S3", "RBAC", "NR-15"];
+const jeanTechs = ["Python", "PostgreSQL", "SQL Server", "Firebird", "Supabase", "API REST"];
 
 export default function CasesSection() {
   return (
@@ -296,7 +293,7 @@ export default function CasesSection() {
 
         {/* =============== MINI CASES =============== */}
         <div className="grid sm:grid-cols-2 gap-5">
-          {/* RFID */}
+          {/* MGL */}
           <motion.div
             className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl p-6 sm:p-8 h-full"
             initial={{ opacity: 0, y: 20 }}
@@ -307,42 +304,33 @@ export default function CasesSection() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/15">
-                <Tag className="w-5 h-5" strokeWidth={1.5} />
+                <Scale className="w-5 h-5" strokeWidth={1.5} />
               </div>
               <div>
-                <h3 className="text-white font-semibold">
-                  DMTN Estoque Inteligente
-                </h3>
-                <p className="text-xs text-zinc-500">Sistema RFID completo</p>
+                <h3 className="text-white font-semibold">MGL Engenharia</h3>
+                <p className="text-xs text-zinc-500">
+                  Gestão de Perícias Trabalhistas
+                </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-3 mb-5">
-              {rfidStats.map((item, i) => (
-                <div
-                  key={i}
-                  className="bg-zinc-900/40 rounded-xl p-3 text-center border border-zinc-800/30"
+            <p className="text-sm text-zinc-400 leading-relaxed mb-5">
+              Sistema completo para gestão de processos trabalhistas com controle
+              de perícias (NR-1, NR-15), upload de fotos com armazenamento S3,
+              laudos técnicos e controle de acesso por perfil (RBAC).
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {mglTechs.map((tech) => (
+                <span
+                  key={tech}
+                  className="text-[10px] font-medium text-zinc-500 px-2.5 py-1 rounded-full bg-zinc-800/40 border border-zinc-800/60"
                 >
-                  <p className="text-[10px] text-zinc-600 mb-1 uppercase tracking-wider">
-                    {item.label}
-                  </p>
-                  <p
-                    className={`text-sm font-semibold ${
-                      item.positive ? "text-emerald-400" : "text-red-400"
-                    }`}
-                  >
-                    {item.value}
-                  </p>
-                </div>
+                  {tech}
+                </span>
               ))}
             </div>
-            <p className="text-xs text-zinc-500 leading-relaxed">
-              Hardware incluso com implementação completa. Leitura por
-              proximidade, relatórios automáticos e integração com sistemas
-              existentes.
-            </p>
           </motion.div>
 
-          {/* PedidosExpress */}
+          {/* Jean Carlos - Ingestão ERP */}
           <motion.div
             className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl p-6 sm:p-8 h-full"
             initial={{ opacity: 0, y: 20 }}
@@ -353,28 +341,23 @@ export default function CasesSection() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 border border-blue-500/15">
-                <MessageCircle className="w-5 h-5" strokeWidth={1.5} />
+                <BarChart3 className="w-5 h-5" strokeWidth={1.5} />
               </div>
               <div>
-                <h3 className="text-white font-semibold">PedidosExpress</h3>
+                <h3 className="text-white font-semibold">InfoMercados</h3>
                 <p className="text-xs text-zinc-500">
-                  Pedidos via WhatsApp
+                  Integração ERP Multi-banco
                 </p>
               </div>
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed mb-5">
-              Sistema completo de pedidos via WhatsApp com apps nativos (Kotlin +
-              iOS) que imprimem diretamente na impressora térmica. Integrado com
-              gestão de cardápio e acompanhamento em tempo real.
+              Pipeline de ingestão que conecta ERPs legados (PostgreSQL, SQL
+              Server, Firebird) a uma API unificada com Supabase. Agente
+              instalável por cliente com sync automático de vendas, estoque e
+              financeiro.
             </p>
             <div className="flex flex-wrap gap-2">
-              {[
-                "Kotlin",
-                "Swift",
-                "Impressão Térmica",
-                "WhatsApp API",
-                "Cardápio Digital",
-              ].map((tech) => (
+              {jeanTechs.map((tech) => (
                 <span
                   key={tech}
                   className="text-[10px] font-medium text-zinc-500 px-2.5 py-1 rounded-full bg-zinc-800/40 border border-zinc-800/60"

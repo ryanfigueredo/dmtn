@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
-import Link from "next/link";
 import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
 
 const HeaderSection = () => {
@@ -61,10 +60,8 @@ const HeaderSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
         >
-          <Link
-            href="https://crm.dmtn.com.br/apresentacao"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a
+            href="#agendar"
             onClick={() => {
               trackConversion(CONVERSION_SEND_TO.scheduleClick);
               trackEvent("cta_click", { location: "hero", label: "Agendar diagnóstico gratuito" });
@@ -73,7 +70,7 @@ const HeaderSection = () => {
           >
             Agendar diagnóstico gratuito
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </Link>
+          </a>
           <a
             href="#cases"
             className="inline-flex items-center gap-2 text-zinc-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"

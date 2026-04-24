@@ -51,10 +51,8 @@ const Header = () => {
 
         <div className="flex items-center gap-3">
           <div className="hidden sm:flex items-center">
-            <Link
-              href="https://crm.dmtn.com.br/apresentacao"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a
+              href="#agendar"
               onClick={() => {
                 trackConversion(CONVERSION_SEND_TO.scheduleClick);
                 trackEvent("cta_click", { location: "header", label: "Falar com especialista" });
@@ -62,7 +60,7 @@ const Header = () => {
               className="inline-flex text-sm font-medium px-5 py-2 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:border-indigo-500/30 transition-all"
             >
               Falar com especialista
-            </Link>
+            </a>
           </div>
           <div className="md:hidden">
             <CustomSheetHeader />
