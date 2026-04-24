@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 
-const CRM_API = "https://crm.dmtn.com.br/api/chat/qualify";
+const CRM_API = "/api/chat/qualify";
 const BOOKING_URL = "https://crm.dmtn.com.br/agendar";
 
 interface Message {
