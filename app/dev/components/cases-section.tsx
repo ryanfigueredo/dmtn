@@ -11,7 +11,6 @@ import {
   Star,
   Scale,
   BarChart3,
-  ArrowRight,
 } from "lucide-react";
 
 function useAnimatedCounter(end: number, duration: number) {
