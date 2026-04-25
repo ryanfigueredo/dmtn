@@ -24,11 +24,11 @@ const SectionPartners = () => {
         
 
         <div className="flex flex-col items-center">
-          <Link href="https://crm.dmtn.com.br/apresentacao" target="_blank" rel="noopener noreferrer">
+          <a href="#agendar">
             <Button className="md:mt-8">
               Marcar uma conversa <ArrowRight />
             </Button>
-          </Link>
+          </a>
           <Link
             href="https://wa.me/5521997624873"
             target="_blank"

@@ -5,9 +5,17 @@ import { ToastProvider, ToastViewport } from "./_components/ui/toast";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "DMTN - Soluções Digitais Inovadoras",
+  title: "DMTN Sistemas - Software sob medida para empresas",
   description:
-    "Transformamos ideias em soluções digitais ágeis e eficientes. Conheça nossa abordagem moderna para impulsionar negócios com tecnologia de ponta.",
+    "Sistemas completos, apps nativos e automação para empresas que precisam de controle, economia e tempo. Software house em Curitiba-PR.",
+  openGraph: {
+    title: "DMTN Sistemas - Software sob medida para empresas",
+    description:
+      "Sistemas completos, apps nativos e automação para empresas que precisam de controle, economia e tempo.",
+    type: "website",
+    locale: "pt_BR",
+    siteName: "DMTN Sistemas",
+  },
 };
 
 const spaceGrotesk = Space_Grotesk({
@@ -19,7 +27,7 @@ const spaceGrotesk = Space_Grotesk({
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-outfit",
   display: "swap",
 });
@@ -31,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${spaceGrotesk.variable} ${outfit.variable}`}>
-      <body className="font-outfit antialiased bg-[#28264F] overflow-x-hidden">
+      <body className="font-outfit antialiased overflow-x-hidden">
         {/* Google Ads Tag */}
         <Script
           async

@@ -4,7 +4,8 @@
       "Bash(npx next:*)",
       "Read(//Users/ryanfigueredo/Dev/dmtnCrm/desktop/**)",
       "Bash(npx tsc:*)",
-      "Bash(echo \"exit=$?\")"
+      "Bash(echo \"exit=$?\")",
+      "Bash(ls -la /Users/ryanfigueredo/Dev/dmtn/.env*)"
     ]
   }
 }

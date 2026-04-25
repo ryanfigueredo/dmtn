@@ -6,15 +6,10 @@ import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag
 
 const HeaderSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Orbs */}
-      <div className="absolute w-[600px] h-[600px] rounded-full blur-3xl bg-indigo-600/10 -top-[200px] -right-[200px] pointer-events-none animate-[float_6s_ease-in-out_infinite]" />
-      <div className="absolute w-[400px] h-[400px] rounded-full blur-3xl bg-purple-600/8 -bottom-[100px] -left-[100px] pointer-events-none animate-[float_6s_ease-in-out_2s_infinite]" />
-      <div className="absolute w-[300px] h-[300px] rounded-full blur-3xl bg-blue-600/6 top-[40%] left-[60%] pointer-events-none animate-[float_6s_ease-in-out_infinite]" />
-
-      <style>{`
-        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
-      `}</style>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0F1629]">
+      {/* Subtle gradient orbs */}
+      <div className="absolute w-[700px] h-[700px] rounded-full blur-[120px] bg-indigo-600/15 -top-[300px] -right-[200px] pointer-events-none" />
+      <div className="absolute w-[500px] h-[500px] rounded-full blur-[100px] bg-purple-600/8 bottom-0 -left-[150px] pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-6 text-center pt-24 pb-20">
         <motion.div
@@ -23,35 +18,36 @@ const HeaderSection = () => {
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] text-indigo-300 text-sm font-medium">
+          <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] text-indigo-300 text-sm font-medium">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-400" />
             </span>
-            Software House — Curitiba
+            Software House - Curitiba
           </span>
         </motion.div>
 
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight text-white mb-8"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-grotesk font-bold leading-[1.08] tracking-tight text-white mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
-          Transformamos empresas com{" "}
-          <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            tecnologia sob medida
+          Não vendemos sistemas.
+          <br />
+          <span className="text-indigo-400">
+            Vendemos controle, economia e tempo.
           </span>
         </motion.h1>
 
         <motion.p
-          className="text-lg sm:text-xl text-zinc-400 leading-relaxed mb-12 max-w-2xl mx-auto"
+          className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-12 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          ERPs completos, apps nativos, sistemas com IA, ponto digital com
-          reconhecimento facial e automações que eliminam processos manuais.
+          Sistemas completos para empresas que precisam parar de depender de
+          planilhas, processos manuais e sistemas que ninguém sabe como funciona.
         </motion.p>
 
         <motion.div
@@ -73,7 +69,7 @@ const HeaderSection = () => {
           </a>
           <a
             href="#cases"
-            className="inline-flex items-center gap-2 text-zinc-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"
+            className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"
           >
             Ver cases de sucesso
             <ArrowDown className="w-4 h-4" />
@@ -81,8 +77,17 @@ const HeaderSection = () => {
         </motion.div>
       </div>
 
-      {/* Bottom line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent" />
+      {/* Bottom curve */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg
+          className="w-full block"
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          style={{ height: "60px" }}
+        >
+          <path d="M0,80 C360,20 1080,20 1440,80 L1440,80 L0,80 Z" fill="#FAFAF8" />
+        </svg>
+      </div>
     </section>
   );
 };

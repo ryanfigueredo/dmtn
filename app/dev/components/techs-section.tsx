@@ -45,15 +45,13 @@ export default function TechSection() {
               melhor para entregar performance, segurança e escalabilidade.
             </p>
             <div className="flex flex-col">
-              <Link
-                href="https://crm.dmtn.com.br/apresentacao"
-                target="_blank"
-                rel="noopener noreferrer"
+              <a
+                href="#agendar"
                 className="group inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
               >
                 Começar agora
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </Link>
+              </a>
               <Link
                 href="https://wa.me/5521997624873"
                 target="_blank"
