@@ -43,7 +43,7 @@ export default function DiagnosticSection() {
       setMessages([
         {
           role: "assistant",
-          content: "Oi! Me conta: qual é o seu negócio e o que você precisa?",
+          content: "Oi! Eu sou o assistente da DMTN. Como posso te ajudar? Se quiser, já pode agendar uma conversa com nosso time.",
         },
       ]);
     } finally {
