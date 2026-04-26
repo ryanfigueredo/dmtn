@@ -13,9 +13,9 @@ const HeaderSection = () => {
 
       <div className="relative max-w-5xl mx-auto px-6 text-center pt-24 pb-20">
         <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: -10, filter: "blur(4px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ type: "spring", duration: 0.5, bounce: 0 }}
           className="mb-8"
         >
           <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] text-indigo-300 text-sm font-medium">
@@ -29,9 +29,9 @@ const HeaderSection = () => {
 
         <motion.h1
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-grotesk font-bold leading-[1.08] tracking-tight text-white mb-8"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
+          initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ type: "spring", duration: 0.6, bounce: 0, delay: 0.15 }}
         >
           Não vendemos sistemas.
           <br />
@@ -42,9 +42,9 @@ const HeaderSection = () => {
 
         <motion.p
           className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-12 max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ type: "spring", duration: 0.55, bounce: 0, delay: 0.3 }}
         >
           Sistemas completos para empresas que precisam parar de depender de
           planilhas, processos manuais e sistemas que ninguém sabe como funciona.
@@ -52,9 +52,9 @@ const HeaderSection = () => {
 
         <motion.div
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ type: "spring", duration: 0.5, bounce: 0, delay: 0.45 }}
         >
           <a
             href="#agendar"

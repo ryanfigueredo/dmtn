@@ -134,7 +134,7 @@ const Footer = () => {
                 alt="AWS Partner Network"
                 width={280}
                 height={80}
-                className="h-20 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer"
+                className="h-20 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer"
               />
             </div>
             <div className="h-8 flex items-center">
@@ -143,7 +143,7 @@ const Footer = () => {
                 alt="Meta Business Partner"
                 width={100}
                 height={32}
-                className="h-8 w-auto object-contain invert hue-rotate-180 opacity-60 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer"
+                className="h-8 w-auto object-contain invert hue-rotate-180 opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer"
               />
             </div>
             <div className="h-14 flex items-center">
@@ -152,7 +152,7 @@ const Footer = () => {
                 alt="CertiProf Scrum Master SMPC"
                 width={56}
                 height={56}
-                className="h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer"
+                className="h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer"
               />
             </div>
             <div className="h-16 flex items-center">
@@ -161,7 +161,7 @@ const Footer = () => {
                 alt="Apple Developer"
                 width={200}
                 height={64}
-                className="h-16 w-auto object-contain invert opacity-60 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer"
+                className="h-16 w-auto object-contain invert opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer"
               />
             </div>
           </div>

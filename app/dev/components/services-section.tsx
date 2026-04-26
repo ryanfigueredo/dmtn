@@ -59,10 +59,10 @@ const ServicesSection: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6 relative">
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
+          transition={{ type: "spring", duration: 0.55, bounce: 0 }}
         >
           <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] text-indigo-300 text-xs font-medium tracking-wider uppercase mb-5">
             O que fazemos
@@ -83,11 +83,11 @@ const ServicesSection: React.FC = () => {
           {services.map((service, i) => (
             <motion.div
               key={i}
-              className="group bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl p-6 hover:border-indigo-500/20 transition-all duration-300 h-full relative overflow-hidden"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              className="group bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl p-6 hover:border-indigo-500/20 transition-colors duration-300 h-full relative overflow-hidden"
+              initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
+              transition={{ type: "spring", duration: 0.45, bounce: 0, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity" />

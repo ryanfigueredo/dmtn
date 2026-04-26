@@ -117,10 +117,10 @@ export default function CasesSection() {
         {/* Section header */}
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6 }}
+          transition={{ type: "spring", duration: 0.5, bounce: 0 }}
         >
           <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-xs font-semibold tracking-wider uppercase mb-5">
             Case de sucesso
@@ -136,10 +136,10 @@ export default function CasesSection() {
         {/* =============== KL FACILITIES =============== */}
         <motion.div
           className="bg-white border border-slate-100 rounded-3xl p-8 sm:p-10 lg:p-12 mb-8 shadow-sm hover:shadow-lg hover:shadow-slate-100 transition-shadow duration-500"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          transition={{ type: "spring", duration: 0.55, bounce: 0, delay: 0.1 }}
         >
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
@@ -322,10 +322,10 @@ export default function CasesSection() {
         {/* =============== OUTROS PROJETOS =============== */}
         <motion.div
           className="text-center mb-8 mt-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.5 }}
+          transition={{ type: "spring", duration: 0.45, bounce: 0 }}
         >
           <h3 className="text-xl font-grotesk font-bold text-[#0F1629]">
             Outros projetos
@@ -335,11 +335,11 @@ export default function CasesSection() {
         <div className="grid sm:grid-cols-2 gap-5">
           {/* MGL */}
           <motion.div
-            className="bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 h-full hover:shadow-lg hover:shadow-slate-100 transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            className="bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 h-full hover:shadow-lg hover:shadow-slate-100 transition-shadow duration-300"
+            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ type: "spring", duration: 0.45, bounce: 0, delay: 0.1 }}
             whileHover={{ y: -4 }}
           >
             <div className="flex items-center gap-3 mb-5">
@@ -377,11 +377,11 @@ export default function CasesSection() {
 
           {/* InfoMercados */}
           <motion.div
-            className="bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 h-full hover:shadow-lg hover:shadow-slate-100 transition-all duration-300"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            className="bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 h-full hover:shadow-lg hover:shadow-slate-100 transition-shadow duration-300"
+            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ type: "spring", duration: 0.45, bounce: 0, delay: 0.2 }}
             whileHover={{ y: -4 }}
           >
             <div className="flex items-center gap-3 mb-5">

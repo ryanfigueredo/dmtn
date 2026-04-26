@@ -91,7 +91,7 @@ const Header = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </Link>
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 origin-top scale-95 group-hover:scale-100">
                   <div className="bg-[#0F1629]/95 backdrop-blur-xl border border-white/[0.08] rounded-xl shadow-xl shadow-black/20 py-2 min-w-[180px]">
                     {link.children.map((child) => (
                       <Link
