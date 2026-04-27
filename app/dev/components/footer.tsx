@@ -22,14 +22,14 @@ const Footer = () => {
             <p className="text-sm text-slate-400 leading-relaxed mb-3">
               Software sob medida para empresas que precisam de controle, economia e tempo.
             </p>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-slate-400">
               CNPJ: 59.171.428/0001-40
             </p>
           </div>
 
           {/* Soluções */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Soluções</h4>
+            <p className="text-sm font-semibold text-white mb-4">Soluções</p>
             <nav className="flex flex-col gap-2.5">
               <Link href="/solucoes" className="text-sm text-slate-400 hover:text-white transition-colors">
                 ERPs e Sistemas
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Empresa */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Empresa</h4>
+            <p className="text-sm font-semibold text-white mb-4">Empresa</p>
             <nav className="flex flex-col gap-2.5">
               <Link href="/sobre" className="text-sm text-slate-400 hover:text-white transition-colors">
                 Sobre a DMTN
@@ -64,7 +64,7 @@ const Footer = () => {
 
           {/* Redes Sociais */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Redes Sociais</h4>
+            <p className="text-sm font-semibold text-white mb-4">Redes Sociais</p>
             <nav className="flex flex-col gap-3">
               <Link
                 href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
@@ -108,7 +108,7 @@ const Footer = () => {
 
           {/* Contato */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Contato</h4>
+            <p className="text-sm font-semibold text-white mb-4">Contato</p>
             <nav className="flex flex-col gap-2.5">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
@@ -129,7 +129,7 @@ const Footer = () => {
 
         {/* Certificações e Parcerias */}
         <div className="pt-8 mb-8 border-t border-white/[0.06]">
-          <p className="text-[10px] text-slate-500 uppercase tracking-widest font-semibold mb-5 text-center">
+          <p className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold mb-5 text-center">
             Certificações e Parcerias
           </p>
           <div className="flex items-center justify-center gap-10 flex-wrap">
@@ -174,7 +174,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/[0.06]">
-          <p className="text-xs text-slate-600 text-center">
+          <p className="text-xs text-slate-400 text-center">
             &copy; {new Date().getFullYear()} DMTN Sistemas - Tecnologia e Soluções
           </p>
         </div>

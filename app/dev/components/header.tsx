@@ -130,7 +130,7 @@ const Header = () => {
               }}
               className={`inline-flex text-sm font-semibold px-5 py-2 rounded-full transition-all ${
                 scrolled
-                  ? "bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/20"
+                  ? "bg-indigo-600 text-white hover:bg-indigo-500 shadow-lg shadow-indigo-500/20"
                   : "bg-white/10 text-white border border-white/20 hover:bg-white/20"
               }`}
             >

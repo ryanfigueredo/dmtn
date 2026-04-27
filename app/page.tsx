@@ -14,22 +14,24 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Header />
-      <HeaderSection />
-      <SegmentsSection />
-      <InstitucionalSection />
-      <ValuesSection />
-      <JdtSection />
-      <CasesSection />
-      <MetodologiaSection />
+      <main>
+        <HeaderSection />
+        <SegmentsSection />
+        <InstitucionalSection />
+        <ValuesSection />
+        <JdtSection />
+        <CasesSection />
+        <MetodologiaSection />
 
-      {/* Dark zone: Agent + Footer */}
-      <div className="bg-[#0F1629]">
-        <svg className="w-full block bg-[#FAFAF8] -mb-px" viewBox="0 0 1440 80" preserveAspectRatio="none" style={{ height: "60px" }}>
-          <path d="M0,80 C360,20 1080,20 1440,80 L1440,80 L0,80 Z" fill="#0F1629" />
-        </svg>
-        <DiagnosticSection />
-        <Footer />
-      </div>
+        {/* Dark zone: Agent + Footer */}
+        <div className="bg-[#0F1629]">
+          <svg className="w-full block bg-[#FAFAF8] -mb-px" viewBox="0 0 1440 80" preserveAspectRatio="none" style={{ height: "60px" }}>
+            <path d="M0,80 C360,20 1080,20 1440,80 L1440,80 L0,80 Z" fill="#0F1629" />
+          </svg>
+          <DiagnosticSection />
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 }

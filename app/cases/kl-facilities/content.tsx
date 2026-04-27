@@ -460,7 +460,7 @@ export default function KLFacilitiesContent() {
               Fale com a gente e descubra como a DMTN pode transformar sua operação.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <ScheduleButton location="case-kl" className="inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25" />
+              <ScheduleButton location="case-kl" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25" />
               <Link
                 href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20vi%20o%20case%20da%20KL%20e%20gostaria%20de%20conversar"
                 target="_blank"

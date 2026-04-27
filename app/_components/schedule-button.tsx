@@ -11,7 +11,7 @@ interface ScheduleButtonProps {
 }
 
 export default function ScheduleButton({
-  className = "inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25",
+  className = "inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25",
   label = "Agendar diagnóstico gratuito",
   location = "page",
   children,

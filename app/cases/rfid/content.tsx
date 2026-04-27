@@ -200,7 +200,7 @@ export default function SaasRfidContent() {
             <p className="text-slate-400 text-lg mb-8">
               Automatize seu inventário com RFID e tenha visibilidade total em tempo real.
             </p>
-            <ScheduleButton location="case-rfid" className="inline-flex items-center gap-2 bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-full hover:bg-indigo-400 transition-colors shadow-lg shadow-indigo-500/20" />
+            <ScheduleButton location="case-rfid" className="inline-flex items-center gap-2 bg-indigo-600 text-white font-semibold px-8 py-3.5 rounded-full hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/20" />
           </div>
         </section>
         <Footer />

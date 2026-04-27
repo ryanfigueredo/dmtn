@@ -54,7 +54,7 @@ export default function DiagnosticSection() {
               });
               openChat();
             }}
-            className="inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-500/20"
+            className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors shadow-lg shadow-indigo-500/20"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >

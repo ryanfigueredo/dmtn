@@ -43,5 +43,13 @@
   },
   "engines": {
     "node": "24.x"
-  }
+  },
+  "browserslist": [
+    "chrome >= 90",
+    "firefox >= 90",
+    "safari >= 15",
+    "edge >= 90",
+    "not dead",
+    "not ie 11"
+  ]
 }

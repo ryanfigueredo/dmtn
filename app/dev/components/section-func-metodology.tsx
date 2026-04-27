@@ -58,7 +58,7 @@ const FuncMetodology = () => {
 
             <button
               onClick={() => openChat()}
-              className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
+              className="group inline-flex items-center gap-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-base px-8 py-4 rounded-xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
             >
               Agendar meu diagnóstico
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />

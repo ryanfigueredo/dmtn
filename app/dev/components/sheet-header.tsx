@@ -33,6 +33,7 @@ const CustomSheetHeader = () => {
           variant="ghost"
           size="icon"
           className="text-white hover:text-white/80"
+          aria-label="Abrir menu de navegação"
         >
           <Menu className="w-5 h-5" />
         </Button>
@@ -57,7 +58,7 @@ const CustomSheetHeader = () => {
               trackEvent("cta_click", { location: "mobile_sheet", label: "Falar com especialista" });
               openChat();
             }}
-            className="w-full bg-indigo-500 hover:bg-indigo-400 text-white mt-4"
+            className="w-full bg-indigo-600 hover:bg-indigo-500 text-white mt-4"
           >
             Falar com especialista
           </Button>

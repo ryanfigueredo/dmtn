@@ -182,7 +182,7 @@ export default function PedidosExpressContent() {
             <p className="text-slate-400 text-lg mb-8">
               Do cardápio digital à impressão da comanda - tudo integrado e acessível.
             </p>
-            <ScheduleButton location="case-pedidos-express" className="inline-flex items-center gap-2 bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-full hover:bg-indigo-400 transition-colors shadow-lg shadow-indigo-500/20" />
+            <ScheduleButton location="case-pedidos-express" className="inline-flex items-center gap-2 bg-indigo-600 text-white font-semibold px-8 py-3.5 rounded-full hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-500/20" />
           </div>
         </section>
         <Footer />

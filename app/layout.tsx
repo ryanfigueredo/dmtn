@@ -6,9 +6,13 @@ import { DiagnosticChatProvider } from "./_components/diagnostic-chat-provider";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dmtn.com.br"),
   title: "DMTN Sistemas - Software sob medida para empresas",
   description:
     "Sistemas completos, apps nativos e automação para empresas que precisam de controle, economia e tempo. Software house em Curitiba-PR.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "DMTN Sistemas - Software sob medida para empresas",
     description:
@@ -40,11 +44,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${spaceGrotesk.variable} ${outfit.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      </head>
       <body className="font-outfit antialiased overflow-x-hidden">
         {/* Google Ads Tag */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17323130920"
+          strategy="afterInteractive"
         />
         <Script id="google-ads-tag" strategy="afterInteractive">
           {`
@@ -60,8 +68,8 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Apollo Tracking */}
-        <Script id="apollo-tracker" strategy="afterInteractive">
+        {/* Apollo Tracking — lazyOnload para não bloquear renderização */}
+        <Script id="apollo-tracker" strategy="lazyOnload">
           {`
             function initApollo(){
               var n=Math.random().toString(36).substring(7),
@@ -70,7 +78,9 @@ export default function RootLayout({
               o.async=true;
               o.defer=true;
               o.onload=function(){
-                window.trackingFunctions.onLoad({appId:"69d41c7ed11bea000d07edbb"});
+                if(window.trackingFunctions){
+                  window.trackingFunctions.onLoad({appId:"69d41c7ed11bea000d07edbb"});
+                }
               };
               document.head.appendChild(o);
             }

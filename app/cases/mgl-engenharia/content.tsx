@@ -180,7 +180,7 @@ export default function MGLContent() {
             <p className="text-slate-400 text-lg mb-8">
               Fale com a gente e descubra como a DMTN pode ajudar.
             </p>
-            <ScheduleButton location="case-mgl" className="inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25" />
+            <ScheduleButton location="case-mgl" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25" />
           </div>
         </section>
         <Footer />
