@@ -347,7 +347,7 @@ export default function CasesSection() {
                 <Scale className="w-5 h-5" strokeWidth={1.5} />
               </div>
               <div>
-                <h3 className="text-[#0F1629] font-semibold">MGL Engenharia</h3>
+                <h3 className="text-[#0F1629] font-semibold">Laudos Periciais MGL</h3>
                 <p className="text-xs text-slate-500">Gestão de Perícias Trabalhistas</p>
               </div>
             </div>

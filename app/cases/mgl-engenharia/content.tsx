@@ -92,7 +92,7 @@ export default function MGLContent() {
               Sobre o projeto
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              A MGL Engenharia precisava de um sistema robusto para gerenciar
+              A Laudos Periciais MGL precisava de um sistema robusto para gerenciar
               perícias trabalhistas envolvendo normas regulamentadoras (NR-1 e
               NR-15). O desafio era centralizar documentos, fotos de campo,
               laudos técnicos e o fluxo de cada processo em um sistema seguro e
