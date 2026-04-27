@@ -113,7 +113,7 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
                 <span className="text-sm text-slate-400">
-                  R. General Mário Tourinho, 1746, Sala 1601 — Curitiba, PR
+                  R. General Mário Tourinho, 1746, Curitiba, PR
                 </span>
               </div>
               <a
