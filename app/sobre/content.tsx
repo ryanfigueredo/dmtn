@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ScheduleButton from "@/app/_components/schedule-button";
 import Header from "@/app/dev/components/header";
 import Footer from "@/app/dev/components/footer";
 import {
@@ -275,9 +276,7 @@ export default function SobreContent() {
                 </p>
               </div>
             </div>
-            <p className="text-sm text-slate-500 mt-4">
-              CNPJ: 59.171.428/0001-40
-            </p>
+          
           </motion.div>
         </div>
       </section>
@@ -296,12 +295,7 @@ export default function SobreContent() {
               Agende um diagnóstico gratuito e descubra como podemos transformar
               sua operação.
             </p>
-            <Link
-              href="/#agendar"
-              className="inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25"
-            >
-              Agendar diagnóstico gratuito
-            </Link>
+            <ScheduleButton location="sobre" />
           </div>
         </section>
         <Footer />

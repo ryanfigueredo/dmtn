@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
+import { useDiagnosticChat } from "@/app/_components/diagnostic-chat-provider";
 
 const HeaderSection = () => {
+  const { openChat } = useDiagnosticChat();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0F1629]">
       {/* Subtle gradient orbs */}
@@ -56,17 +58,17 @@ const HeaderSection = () => {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ type: "spring", duration: 0.5, bounce: 0, delay: 0.45 }}
         >
-          <a
-            href="#agendar"
+          <button
             onClick={() => {
               trackConversion(CONVERSION_SEND_TO.scheduleClick);
               trackEvent("cta_click", { location: "hero", label: "Agendar diagnóstico gratuito" });
+              openChat();
             }}
             className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
           >
             Agendar diagnóstico gratuito
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </a>
+          </button>
           <a
             href="#cases"
             className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Outfit } from "next/font/google";
 import "./globals.css";
 import { ToastProvider, ToastViewport } from "./_components/ui/toast";
+import { DiagnosticChatProvider } from "./_components/diagnostic-chat-provider";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -77,10 +78,12 @@ export default function RootLayout({
           `}
         </Script>
 
-        <ToastProvider>
-          {children}
-          <ToastViewport />
-        </ToastProvider>
+        <DiagnosticChatProvider>
+          <ToastProvider>
+            {children}
+            <ToastViewport />
+          </ToastProvider>
+        </DiagnosticChatProvider>
       </body>
     </html>
   );

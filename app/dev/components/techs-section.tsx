@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useDiagnosticChat } from "@/app/_components/diagnostic-chat-provider";
 
 const technologies = [
   { name: "Firebase", logo: "/techs/fire.svg" },
@@ -19,6 +20,7 @@ const technologies = [
 ];
 
 export default function TechSection() {
+  const { openChat } = useDiagnosticChat();
   return (
     <section
       id="tecnologias"
@@ -45,13 +47,13 @@ export default function TechSection() {
               melhor para entregar performance, segurança e escalabilidade.
             </p>
             <div className="flex flex-col">
-              <a
-                href="#agendar"
+              <button
+                onClick={() => openChat()}
                 className="group inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
               >
                 Começar agora
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </a>
+              </button>
               <Link
                 href="https://wa.me/5521997624873"
                 target="_blank"

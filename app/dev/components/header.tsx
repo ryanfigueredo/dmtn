@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import CustomSheetHeader from "./sheet-header";
 import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
+import { useDiagnosticChat } from "@/app/_components/diagnostic-chat-provider";
 
 const navLinks = [
   {
@@ -50,6 +51,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const { openChat } = useDiagnosticChat();
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -120,11 +122,11 @@ const Header = () => {
         {/* CTA - far right */}
         <div className="flex items-center gap-3 ml-auto md:ml-0">
           <div className="hidden sm:flex items-center">
-            <Link
-              href={isHome ? "#agendar" : "/#agendar"}
+            <button
               onClick={() => {
                 trackConversion(CONVERSION_SEND_TO.scheduleClick);
                 trackEvent("cta_click", { location: "header", label: "Falar com especialista" });
+                openChat();
               }}
               className={`inline-flex text-sm font-semibold px-5 py-2 rounded-full transition-all ${
                 scrolled
@@ -133,7 +135,7 @@ const Header = () => {
               }`}
             >
               Falar com especialista
-            </Link>
+            </button>
           </div>
           <div className="md:hidden">
             <CustomSheetHeader />

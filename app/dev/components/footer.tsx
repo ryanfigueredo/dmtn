@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <footer className="bg-[#0F1629] border-t border-white/[0.06] pt-16 pb-8 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-2">
             <Image
               height={24}
               width={40}
@@ -62,25 +62,10 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contato */}
+          {/* Redes Sociais */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Contato</h4>
-            <nav className="flex flex-col gap-2.5">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-slate-400">
-                  R. General Mário Tourinho, 1746, Sala 1601 — Curitiba, PR
-                </span>
-              </div>
-              <a
-                href="mailto:ryan@dmtn.com.br"
-                className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
-              >
-                <Mail className="w-4 h-4 shrink-0" />
-                ryan@dmtn.com.br
-              </a>
-            </nav>
-            <div className="flex flex-col gap-3 mt-5">
+            <h4 className="text-sm font-semibold text-white mb-4">Redes Sociais</h4>
+            <nav className="flex flex-col gap-3">
               <Link
                 href="https://wa.me/5521997624873?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20DMTN"
                 target="_blank"
@@ -118,7 +103,27 @@ const Footer = () => {
                 </svg>
                 LinkedIn
               </Link>
-            </div>
+            </nav>
+          </div>
+
+          {/* Contato */}
+          <div>
+            <h4 className="text-sm font-semibold text-white mb-4">Contato</h4>
+            <nav className="flex flex-col gap-2.5">
+              <div className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
+                <span className="text-sm text-slate-400">
+                  R. General Mário Tourinho, 1746, Sala 1601 — Curitiba, PR
+                </span>
+              </div>
+              <a
+                href="mailto:ryan@dmtn.com.br"
+                className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+              >
+                <Mail className="w-4 h-4 shrink-0" />
+                ryan@dmtn.com.br
+              </a>
+            </nav>
           </div>
         </div>
 

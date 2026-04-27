@@ -1,9 +1,12 @@
+"use client";
 
 import { Button } from "@/app/_components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useDiagnosticChat } from "@/app/_components/diagnostic-chat-provider";
 
 const SectionPartners = () => {
+  const { openChat } = useDiagnosticChat();
   return (
     <div className="flex flex-col items-center justify-center gap-8 p-8 py-36">
       {/* <div className="flex flex-wrap justify-center gap-8">
@@ -24,11 +27,9 @@ const SectionPartners = () => {
         
 
         <div className="flex flex-col items-center">
-          <a href="#agendar">
-            <Button className="md:mt-8">
-              Marcar uma conversa <ArrowRight />
-            </Button>
-          </a>
+          <Button className="md:mt-8" onClick={() => openChat()}>
+            Marcar uma conversa <ArrowRight />
+          </Button>
           <Link
             href="https://wa.me/5521997624873"
             target="_blank"

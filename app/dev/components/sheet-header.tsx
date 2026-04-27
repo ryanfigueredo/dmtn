@@ -12,6 +12,7 @@ import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { trackConversion, trackEvent, CONVERSION_SEND_TO } from "@/app/_lib/gtag";
+import { useDiagnosticChat } from "@/app/_components/diagnostic-chat-provider";
 
 const navLinks = [
   { label: "Soluções", href: "/solucoes", homeHref: "#solucoes" },
@@ -23,6 +24,7 @@ const navLinks = [
 const CustomSheetHeader = () => {
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const { openChat } = useDiagnosticChat();
 
   return (
     <Sheet>
@@ -49,18 +51,16 @@ const CustomSheetHeader = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            href={isHome ? "#agendar" : "/#agendar"}
+          <Button
             onClick={() => {
               trackConversion(CONVERSION_SEND_TO.scheduleClick);
               trackEvent("cta_click", { location: "mobile_sheet", label: "Falar com especialista" });
+              openChat();
             }}
-            className="mt-4"
+            className="w-full bg-indigo-500 hover:bg-indigo-400 text-white mt-4"
           >
-            <Button className="w-full bg-indigo-500 hover:bg-indigo-400 text-white">
-              Falar com especialista
-            </Button>
-          </Link>
+            Falar com especialista
+          </Button>
         </nav>
       </SheetContent>
     </Sheet>

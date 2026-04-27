@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ScheduleButton from "@/app/_components/schedule-button";
 import Header from "@/app/dev/components/header";
 import Footer from "@/app/dev/components/footer";
 import {
@@ -179,12 +180,7 @@ export default function MGLContent() {
             <p className="text-slate-400 text-lg mb-8">
               Fale com a gente e descubra como a DMTN pode ajudar.
             </p>
-            <Link
-              href="/#agendar"
-              className="inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25"
-            >
-              Agendar diagnóstico gratuito
-            </Link>
+            <ScheduleButton location="case-mgl" className="inline-flex items-center gap-2 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/25" />
           </div>
         </section>
         <Footer />

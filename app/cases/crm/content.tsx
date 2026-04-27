@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ScheduleButton from "@/app/_components/schedule-button";
 import Header from "@/app/dev/components/header";
 import Footer from "@/app/dev/components/footer";
 import {
@@ -233,12 +234,7 @@ export default function DmtnCrmContent() {
             <p className="text-slate-400 text-lg mb-8">
               Automatize sua captação de leads e agende um diagnóstico gratuito.
             </p>
-            <Link
-              href="/#agendar"
-              className="inline-flex items-center gap-2 bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-full hover:bg-indigo-400 transition-colors shadow-lg shadow-indigo-500/20"
-            >
-              Agendar diagnóstico gratuito
-            </Link>
+            <ScheduleButton location="case-crm" className="inline-flex items-center gap-2 bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-full hover:bg-indigo-400 transition-colors shadow-lg shadow-indigo-500/20" />
           </div>
         </section>
         <Footer />

@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MessageSquare } from "lucide-react";
 import Link from "next/link";
+import { useDiagnosticChat } from "@/app/_components/diagnostic-chat-provider";
 
 const FuncMetodology = () => {
+  const { openChat } = useDiagnosticChat();
   return (
     <section className="py-24 relative" id="consultoria">
       <div className="absolute w-[400px] h-[400px] rounded-full blur-3xl bg-indigo-600/8 top-[30%] -left-[150px] pointer-events-none" />
@@ -54,13 +56,13 @@ const FuncMetodology = () => {
               indicar os melhores caminhos para resultados incríveis.
             </p>
 
-            <a
-              href="#agendar"
+            <button
+              onClick={() => openChat()}
               className="group inline-flex items-center gap-2.5 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold text-base px-8 py-4 rounded-xl transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98]"
             >
               Agendar meu diagnóstico
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
+            </button>
             <Link
               href="https://wa.me/5521997624873"
               target="_blank"
