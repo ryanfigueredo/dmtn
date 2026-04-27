@@ -1,14 +1,17 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import Header from "./dev/components/header";
 import HeaderSection from "./dev/components/section-header";
 import SegmentsSection from "./dev/components/segments-section";
-import InstitucionalSection from "./dev/components/section-institucional";
-import ValuesSection from "./dev/components/values-section";
-import JdtSection from "./dev/components/jdt-section";
-import CasesSection from "./dev/components/cases-section";
-import MetodologiaSection from "./dev/components/section-metodology";
-import DiagnosticSection from "./dev/components/diagnostic-section";
 import Footer from "./dev/components/footer";
+
+// Componentes abaixo da dobra — carregados sob demanda
+const InstitucionalSection = dynamic(() => import("./dev/components/section-institucional"));
+const ValuesSection = dynamic(() => import("./dev/components/values-section"));
+const JdtSection = dynamic(() => import("./dev/components/jdt-section"));
+const CasesSection = dynamic(() => import("./dev/components/cases-section"));
+const MetodologiaSection = dynamic(() => import("./dev/components/section-metodology"));
+const DiagnosticSection = dynamic(() => import("./dev/components/diagnostic-section"));
 
 export default function Home() {
   return (

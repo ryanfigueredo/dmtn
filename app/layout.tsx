@@ -49,12 +49,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body className="font-outfit antialiased overflow-x-hidden">
-        {/* Google Ads Tag */}
+        {/* Google Ads Tag — lazyOnload para não bloquear LCP */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17323130920"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-ads-tag" strategy="afterInteractive">
+        <Script id="google-ads-tag" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
