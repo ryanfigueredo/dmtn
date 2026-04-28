@@ -17,7 +17,7 @@ const Footer = () => {
               width={40}
               className="brightness-0 invert opacity-90 mb-4"
               src="/dmtn.svg"
-              alt="DMTN"
+              alt="DMTN Sistemas - Desenvolvimento de software sob medida"
             />
             <p className="text-sm text-slate-400 leading-relaxed mb-3">
               Software sob medida para empresas que precisam de controle, economia e tempo.

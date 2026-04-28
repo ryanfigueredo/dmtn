@@ -21,9 +21,9 @@ export default function InstitucionalSection() {
             Transformamos processos em software
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            A DMTN Sistemas existe para transformar ideias em código que impactam
-            milhares de pessoas. Eliminamos retrabalho, geramos visibilidade em
-            tempo real e blindamos processos com automação.
+            A DMTN Sistemas desenvolve software sob medida que transforma ideias
+            em código e impacta milhares de pessoas. Eliminamos retrabalho, geramos
+            visibilidade em tempo real e blindamos processos com automação.
           </p>
         </motion.div>
 

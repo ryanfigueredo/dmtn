@@ -75,7 +75,7 @@ const Header = () => {
             width={64}
             className={`brightness-0 invert opacity-90 transition-all duration-500 hover:opacity-100 ${scrolled ? "scale-75" : "scale-100"}`}
             src="/dmtn.svg"
-            alt="DMTN"
+            alt="DMTN Sistemas - Software sob medida para empresas"
           />
         </Link>
 

@@ -48,7 +48,7 @@ export default function MetodologiaSection() {
             Quatro etapas para transformar sua operação
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto text-lg">
-            Do diagnóstico ao lançamento, sem complicação.
+            Do diagnóstico ao lançamento do seu software sob medida, sem complicação.
           </p>
         </motion.div>
 

@@ -31,8 +31,8 @@ export default function DiagnosticSection() {
             </span>
           </h2>
           <p className="text-zinc-400 max-w-md mx-auto">
-            Nossos especialistas analisam seu negócio e indicam as melhores
-            soluções. Fale com nosso assistente para começar.
+            Nossos especialistas analisam seu negócio e projetam o software sob
+            medida ideal para sua operação. Fale com nosso assistente para começar.
           </p>
         </motion.div>
 

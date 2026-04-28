@@ -7,19 +7,25 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dmtn.com.br"),
-  title: "DMTN Sistemas - Software sob medida para empresas",
+  title: "Software Sob Medida para Empresas | DMTN Sistemas - Curitiba",
   description:
-    "Sistemas completos, apps nativos e automação para empresas que precisam de controle, economia e tempo. Software house em Curitiba-PR.",
+    "Software sob medida para empresas. A DMTN Sistemas cria ERPs, apps nativos e automações que eliminam retrabalho e geram resultados. Diagnóstico gratuito.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "DMTN Sistemas - Software sob medida para empresas",
+    title: "Software Sob Medida para Empresas | DMTN Sistemas - Curitiba",
     description:
-      "Sistemas completos, apps nativos e automação para empresas que precisam de controle, economia e tempo.",
+      "Software sob medida para empresas. A DMTN Sistemas cria ERPs, apps nativos e automações que eliminam retrabalho e geram resultados.",
     type: "website",
     locale: "pt_BR",
     siteName: "DMTN Sistemas",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Software Sob Medida para Empresas | DMTN Sistemas - Curitiba",
+    description:
+      "Software sob medida para empresas. A DMTN Sistemas cria ERPs, apps nativos e automações que eliminam retrabalho e geram resultados.",
   },
 };
 

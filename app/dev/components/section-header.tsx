@@ -35,10 +35,10 @@ const HeaderSection = () => {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ type: "spring", duration: 0.6, bounce: 0, delay: 0.15 }}
         >
-          Não vendemos sistemas.
+          Software sob medida que entrega
           <br />
           <span className="text-indigo-400">
-            Vendemos controle, economia e tempo.
+            controle, economia e tempo.
           </span>
         </motion.h1>
 
@@ -48,8 +48,8 @@ const HeaderSection = () => {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ type: "spring", duration: 0.55, bounce: 0, delay: 0.3 }}
         >
-          Sistemas completos para empresas que precisam parar de depender de
-          planilhas, processos manuais e sistemas que ninguém sabe como funciona.
+          Desenvolvemos software sob medida para empresas que precisam parar de
+          depender de planilhas, processos manuais e sistemas genéricos que ninguém sabe como funcionam.
         </motion.p>
 
         <motion.div

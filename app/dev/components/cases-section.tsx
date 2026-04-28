@@ -293,7 +293,7 @@ export default function CasesSection() {
               <div className="w-12 h-12 rounded-full border-2 border-indigo-100 overflow-hidden">
                 <Image
                   src="/luciano.png"
-                  alt="Foto de Luciano Tuyuty"
+                  alt="Luciano Tuyuty, CEO da KL Facilities - cliente de software sob medida DMTN"
                   width={48}
                   height={48}
                   className="w-full h-full object-cover"
