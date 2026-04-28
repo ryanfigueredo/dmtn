@@ -62,6 +62,7 @@ export function DiagnosticChatProvider({
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [slots, setSlots] = useState<SlotOption[]>([]);
+  const [slotIndex, setSlotIndex] = useState(0);
   const [bookedInfo, setBookedInfo] = useState<{
     date: string;
     time: string;
@@ -214,7 +215,8 @@ export function DiagnosticChatProvider({
       }
 
       setSlots(parsed);
-      addAssistantMessage("Escolha um horário disponível:");
+      setSlotIndex(0);
+      addAssistantMessage("Encontrei horários disponíveis. Que tal este?");
       setPhase("picking_slot");
     } catch {
       addAssistantMessage(
@@ -465,26 +467,63 @@ export function DiagnosticChatProvider({
                     </motion.form>
                   )}
 
-                  {phase === "picking_slot" && slots.length > 0 && (
+                  {phase === "picking_slot" && slots.length > 0 && slotIndex < slots.length && (
+                    <motion.div
+                      key={slotIndex}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="space-y-3"
+                    >
+                      <div className="bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-4 text-center">
+                        <p className="text-zinc-400 text-xs mb-1">
+                          Sugestão {slotIndex + 1} de {slots.length}
+                        </p>
+                        <p className="text-white text-lg font-semibold">
+                          {slots[slotIndex]!.label}
+                        </p>
+                      </div>
+                      <div className="flex gap-2">
+                        <motion.button
+                          onClick={() => handleSlotPick(slots[slotIndex]!)}
+                          disabled={loading}
+                          className="flex-1 bg-indigo-500 hover:bg-indigo-600 disabled:opacity-40 disabled:pointer-events-none text-white font-semibold py-3 rounded-xl transition"
+                          whileHover={{ scale: 1.01 }}
+                          whileTap={{ scale: 0.99 }}
+                        >
+                          Confirmar este horário
+                        </motion.button>
+                        <motion.button
+                          onClick={() => setSlotIndex((i) => i + 1)}
+                          disabled={loading}
+                          className="flex-shrink-0 bg-transparent hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-600 text-zinc-300 px-4 py-3 rounded-xl transition disabled:opacity-40 disabled:pointer-events-none"
+                          whileHover={{ scale: 1.01 }}
+                          whileTap={{ scale: 0.99 }}
+                        >
+                          Ver outro →
+                        </motion.button>
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {phase === "picking_slot" && slots.length > 0 && slotIndex >= slots.length && (
                     <motion.div
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3 }}
+                      className="space-y-3"
                     >
-                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                        {slots.map((slot, i) => (
-                          <motion.button
-                            key={i}
-                            onClick={() => handleSlotPick(slot)}
-                            disabled={loading}
-                            className="bg-zinc-800 hover:bg-indigo-500/20 border border-zinc-700 hover:border-indigo-500/50 text-zinc-200 text-sm px-3 py-2.5 rounded-xl transition disabled:opacity-40 disabled:pointer-events-none"
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                          >
-                            {slot.label}
-                          </motion.button>
-                        ))}
-                      </div>
+                      <p className="text-zinc-400 text-sm text-center">
+                        Não há mais horários nesta semana.
+                      </p>
+                      <motion.button
+                        onClick={() => setSlotIndex(0)}
+                        className="w-full bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-zinc-200 font-medium py-3 rounded-xl transition"
+                        whileHover={{ scale: 1.01 }}
+                        whileTap={{ scale: 0.99 }}
+                      >
+                        ← Ver horários novamente
+                      </motion.button>
                     </motion.div>
                   )}
 
