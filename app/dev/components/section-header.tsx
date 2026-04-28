@@ -24,15 +24,18 @@ const HeaderSection = () => {
         </motion.div>
 
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-grotesk font-bold leading-[.98] tracking-tight text-white mb-8"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-grotesk font-bold leading-[1.15] tracking-tight text-white mb-8"
           initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ type: "spring", duration: 0.6, bounce: 0, delay: 0.15 }}
         >
-          A Software House que desenvolve sua solução sob medida; e entrega 
+          A sua Software House que
           <br />
-          <span className="text-indigo-400 py-2">
-            controle, economia e tempo.
+          Desenvolve sua Solução
+          <br />
+          sob medida com{" "}
+          <span className="text-indigo-400">
+            Controle, Economia e Tempo.
           </span>
         </motion.h1>
 
@@ -55,13 +58,28 @@ const HeaderSection = () => {
             Agendar diagnóstico gratuito
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </button>
-          <a
-            href="#segments"
+          <button
+            onClick={() => {
+              const target = document.getElementById("segments");
+              if (!target) return;
+              const start = window.scrollY;
+              const end = target.getBoundingClientRect().top + start;
+              const duration = 1200;
+              let startTime: number | null = null;
+              const ease = (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+              const step = (timestamp: number) => {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                window.scrollTo(0, start + (end - start) * ease(progress));
+                if (progress < 1) requestAnimationFrame(step);
+              };
+              requestAnimationFrame(step);
+            }}
             className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"
           >
             Veja Mais
             <ArrowDown className="w-4 h-4" />
-          </a>
+          </button>
         </motion.div>
       </div>
 
