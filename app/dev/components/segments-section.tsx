@@ -45,7 +45,7 @@ const segments = [
 
 export default function SegmentsSection() {
   return (
-    <section className="py-24 bg-[#FAFAF8]">
+    <section id="segments" className="py-24 bg-[#FAFAF8]">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           className="text-center mb-14"
@@ -54,11 +54,9 @@ export default function SegmentsSection() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-xs font-semibold tracking-wider uppercase mb-5">
-            Segmentos
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-grotesk font-bold text-[#0F1629] mb-4">
-            Transformamos a operação de empresas como a sua
+          
+          <h2 className="text-3xl sm:text-4xl font-grotesk font-bold text-[#6a6a6a] mb-4">
+            Como transformamos sua <span className="text-[#0F1629] py-2">Operação</span>?
           </h2>
         </motion.div>
 

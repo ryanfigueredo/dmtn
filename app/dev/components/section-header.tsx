@@ -8,49 +8,35 @@ import { useDiagnosticChat } from "@/app/_components/diagnostic-chat-provider";
 const HeaderSection = () => {
   const { openChat } = useDiagnosticChat();
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0F1629]">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#0F1629]">
       {/* Subtle gradient orbs */}
       <div className="absolute w-[700px] h-[700px] rounded-full blur-[120px] bg-indigo-600/15 -top-[300px] -right-[200px] pointer-events-none" />
       <div className="absolute w-[500px] h-[500px] rounded-full blur-[100px] bg-purple-600/8 bottom-0 -left-[150px] pointer-events-none" />
 
-      <div className="relative max-w-5xl mx-auto px-6 text-center pt-24 pb-20">
+      <div className="relative max-w-3xl mx-auto px-6 text-center pt-20 pb-20">
         <motion.div
           initial={{ opacity: 0, y: -10, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ type: "spring", duration: 0.5, bounce: 0 }}
           className="mb-8"
         >
-          <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-white/[0.06] backdrop-blur-sm border border-white/[0.08] text-indigo-300 text-sm font-medium">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-400" />
-            </span>
-            Software House - Curitiba
-          </span>
+          
         </motion.div>
 
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-grotesk font-bold leading-[1.08] tracking-tight text-white mb-8"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-grotesk font-bold leading-[.98] tracking-tight text-white mb-8"
           initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ type: "spring", duration: 0.6, bounce: 0, delay: 0.15 }}
         >
-          Software sob medida que entrega
+          A Software House que desenvolve sua solução sob medida; e entrega 
           <br />
-          <span className="text-indigo-400">
+          <span className="text-indigo-400 py-2">
             controle, economia e tempo.
           </span>
         </motion.h1>
 
-        <motion.p
-          className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-12 max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ type: "spring", duration: 0.55, bounce: 0, delay: 0.3 }}
-        >
-          Desenvolvemos software sob medida para empresas que precisam parar de
-          depender de planilhas, processos manuais e sistemas genéricos que ninguém sabe como funcionam.
-        </motion.p>
+        
 
         <motion.div
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
@@ -70,10 +56,10 @@ const HeaderSection = () => {
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </button>
           <a
-            href="#cases"
+            href="#segments"
             className="inline-flex items-center gap-2 text-slate-400 hover:text-white font-medium text-base px-6 py-4 rounded-2xl transition-colors"
           >
-            Ver cases de sucesso
+            Veja Mais
             <ArrowDown className="w-4 h-4" />
           </a>
         </motion.div>
