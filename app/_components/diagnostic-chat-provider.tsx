@@ -60,6 +60,7 @@ export function DiagnosticChatProvider({
   const [loading, setLoading] = useState(false);
   const [phase, setPhase] = useState<Phase>("chat");
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [slots, setSlots] = useState<SlotOption[]>([]);
   const [slotIndex, setSlotIndex] = useState(0);
@@ -167,13 +168,13 @@ export function DiagnosticChatProvider({
 
   async function handleInfoSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!name.trim()) return;
+    if (!name.trim() || !phone.trim()) return;
 
     setMessages((prev) => [
       ...prev,
       {
         role: "user",
-        content: `${name.trim()}${email.trim() ? ` — ${email.trim()}` : ""}`,
+        content: `${name.trim()} — ${phone.trim()}${email.trim() ? ` — ${email.trim()}` : ""}`,
       },
     ]);
     setLoading(true);
@@ -239,6 +240,7 @@ export function DiagnosticChatProvider({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: name.trim(),
+          phone: phone.trim(),
           email: email.trim() || undefined,
           date: slot.date,
           time: slot.time,
@@ -449,6 +451,14 @@ export function DiagnosticChatProvider({
                         className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 placeholder-zinc-500 text-sm transition focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
                       />
                       <input
+                        type="tel"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        placeholder="Seu WhatsApp com DDD *"
+                        required
+                        className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 placeholder-zinc-500 text-sm transition focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
+                      />
+                      <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -457,7 +467,7 @@ export function DiagnosticChatProvider({
                       />
                       <button
                         type="submit"
-                        disabled={loading || !name.trim()}
+                        disabled={loading || !name.trim() || !phone.trim()}
                         className="w-full bg-indigo-500 hover:bg-indigo-600 disabled:opacity-40 disabled:pointer-events-none text-white font-semibold py-3 rounded-xl transition"
                       >
                         {loading
