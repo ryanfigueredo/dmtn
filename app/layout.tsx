@@ -3,7 +3,8 @@ import { Space_Grotesk, Outfit } from "next/font/google";
 import "./globals.css";
 import { ToastProvider, ToastViewport } from "./_components/ui/toast";
 import { DiagnosticChatProvider } from "./_components/diagnostic-chat-provider";
-import Script from "next/script";
+import CookieBanner from "./_components/cookie-banner";
+import TrackingScripts from "./_components/tracking-scripts";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.dmtn.com.br"),
@@ -55,29 +56,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body className="font-outfit antialiased overflow-x-hidden">
-        {/* Google Ads Tag — lazyOnload para não bloquear LCP */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17323130920"
-          strategy="lazyOnload"
-        />
-        <Script id="google-ads-tag" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17323130920');
-            gtag('event', 'conversion', {
-              'send_to': 'AW-17323130920/1KCDCO7xgJ4cEKiAqMRA',
-              'value': 1.0,
-              'currency': 'BRL'
-            });
-          `}
-        </Script>
-
+        <TrackingScripts />
 
         <DiagnosticChatProvider>
           <ToastProvider>
             {children}
+            <CookieBanner />
             <ToastViewport />
           </ToastProvider>
         </DiagnosticChatProvider>

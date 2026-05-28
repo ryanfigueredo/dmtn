@@ -81,13 +81,33 @@ const sections = [
         </p>
         <ul className="list-disc pl-6 space-y-2 text-slate-600 leading-relaxed">
           <li>
-            <strong>Operadores que nos prestam serviço:</strong>{" "}
-            Amazon SES para envio de e-mails e Meta (integração oficial) para
-            campanhas e mensagens. Cada operador é contratualmente obrigado a
-            tratar seus dados conforme a LGPD.
+            <strong>Amazon Web Services (AWS) e Vercel:</strong>{" "}
+            hospedagem e processamento de dados.
+          </li>
+          <li>
+            <strong>Amazon SES:</strong>{" "}
+            envio de e-mails transacionais e de marketing.
+          </li>
+          <li>
+            <strong>Meta (Facebook/Instagram/WhatsApp Business):</strong>{" "}
+            campanhas publicitárias, formulários de captação de leads e
+            atendimento via WhatsApp.
+          </li>
+          <li>
+            <strong>Google (Analytics e Ads):</strong>{" "}
+            análise de tráfego e remarketing.
+          </li>
+          <li>
+            <strong>Anthropic:</strong>{" "}
+            processamento por inteligência artificial em algumas funcionalidades
+            de atendimento e análise de documentos.
           </li>
           <li>Autoridades públicas, quando exigido por lei.</li>
         </ul>
+        <p className="text-slate-600 leading-relaxed">
+          Cada operador é contratualmente obrigado a tratar seus dados conforme a
+          LGPD.
+        </p>
         <p className="text-slate-600 leading-relaxed font-medium">
           NÃO comercializamos, alugamos ou cedemos seus dados a terceiros para
           fins de marketing de terceiros.
@@ -163,16 +183,20 @@ const sections = [
     content: (
       <div className="space-y-4">
         <p className="text-slate-600 leading-relaxed">
-          Nosso site utiliza cookies para análise de tráfego (Google Analytics),
+          Nosso site utiliza cookies essenciais para o funcionamento básico e
+          cookies não-essenciais para análise de tráfego (Google Analytics),
           remarketing (Google Ads) e acompanhamento de conversões (Meta Pixel).
-          Você pode desabilitar cookies nas configurações do seu navegador, mas
-          algumas funcionalidades podem ser afetadas.
         </p>
         <p className="text-slate-600 leading-relaxed">
-          Ao continuar navegando em nosso site, você concorda com o uso de
-          cookies conforme descrito acima. Caso deseje revogar esse
-          consentimento, basta limpar os cookies do navegador ou desativá-los
-          nas configurações.
+          Conforme a LGPD (Art. 8º), cookies de marketing e remarketing só são
+          ativados após o seu consentimento explícito, coletado por meio do
+          banner de cookies exibido na sua primeira visita ao site. Você pode
+          revogar esse consentimento a qualquer momento através do mesmo banner
+          ou limpando os cookies do navegador.
+        </p>
+        <p className="text-slate-600 leading-relaxed">
+          Cookies essenciais (necessários para navegação e segurança) não
+          requerem consentimento e permanecem ativos.
         </p>
       </div>
     ),
