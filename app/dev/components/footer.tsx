@@ -59,6 +59,9 @@ const Footer = () => {
               <a href="/#metodologia" className="text-sm text-slate-400 hover:text-white transition-colors">
                 Metodologia
               </a>
+              <Link href="/privacidade" className="text-sm text-slate-400 hover:text-white transition-colors">
+                Política de Privacidade
+              </Link>
             </nav>
           </div>
 

@@ -3,6 +3,15 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/politica-de-privacidade',
+        destination: '/privacidade',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
