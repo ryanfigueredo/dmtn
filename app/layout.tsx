@@ -18,15 +18,25 @@ export const metadata: Metadata = {
     title: "Software Sob Medida para Empresas | DMTN Sistemas - Curitiba",
     description:
       "Software sob medida para empresas. A DMTN Sistemas cria ERPs, apps nativos e automações que eliminam retrabalho e geram resultados.",
+    url: "https://www.dmtn.com.br",
     type: "website",
     locale: "pt_BR",
     siteName: "DMTN Sistemas",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "DMTN Sistemas - Software Sob Medida para Empresas",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Software Sob Medida para Empresas | DMTN Sistemas - Curitiba",
     description:
       "Software sob medida para empresas. A DMTN Sistemas cria ERPs, apps nativos e automações que eliminam retrabalho e geram resultados.",
+    images: ["/og-image.jpg"],
   },
 };
 
