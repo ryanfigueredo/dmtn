@@ -245,6 +245,8 @@ export function DiagnosticChatProvider({
           date: slot.date,
           time: slot.time,
           summary: `Reunião DMTN — ${name.trim()}`,
+          source: "site_chatbot",
+          chatMessages: messages.filter((m) => m.role === "user" || m.role === "assistant").map((m) => ({ role: m.role, content: m.content })),
         }),
       });
       const data = await res.json();

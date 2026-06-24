@@ -11,7 +11,11 @@ export async function GET(req: NextRequest) {
     if (from) url.searchParams.set("from", from);
     url.searchParams.set("days", days);
 
-    const res = await fetch(url.toString(), { cache: "no-store" });
+    const secret = process.env.CRM_WEBHOOK_SECRET;
+    const res = await fetch(url.toString(), {
+      cache: "no-store",
+      headers: secret ? { "x-site-secret": secret } : {},
+    });
     const data = await res.json();
     return NextResponse.json(data, { status: res.status });
   } catch {

@@ -5,10 +5,14 @@ const CRM_API = "https://crm.dmtn.com.br/api/calendar/book";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
+    const secret = process.env.CRM_WEBHOOK_SECRET;
 
     const res = await fetch(CRM_API, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        ...(secret ? { "x-site-secret": secret } : {}),
+      },
       body: JSON.stringify(body),
     });
 
